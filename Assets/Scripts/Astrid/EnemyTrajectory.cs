@@ -21,7 +21,10 @@ public class EnemyTrajectory : MonoBehaviour
 
     void Update()
     {
-
+        if (objectToFollow == null)
+        {
+            Start();
+        }
         //transform.LookAt(Player);
 
         if (Vector3.Distance(transform.position, objectToFollow.position) >= MinDist)
