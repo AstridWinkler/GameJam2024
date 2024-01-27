@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PaintMap
+  - Bloody
+  - MainCameraBox
+  - EndLevel
+  - SpawnPoint
+  - WithoutFog
   layers:
   - Default
   - TransparentFX
@@ -13,13 +19,13 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Map
+  - GibLowCollision
+  - MapOnlyCol
+  - PlayerOnly
+  - Deadbody
+  - BackgroundEffect
   - 
   - 
   - 
@@ -38,6 +44,24 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundFar
+    uniqueID: 3308059673
+    locked: 0
+  - name: Background
+    uniqueID: 4233082875
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Shadow
+    uniqueID: 851198499
+    locked: 0
+  - name: DefaultFront
+    uniqueID: 1134321107
+    locked: 0
+  - name: FirstPlan
+    uniqueID: 3158340757
+    locked: 0
+  - name: UI
+    uniqueID: 3701771595
     locked: 0
