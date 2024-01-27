@@ -8,7 +8,7 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class GameManager : MonoBehaviour
 {
-    private const string prefabPath = "Prefabs/GAME_MANAGER";
+    private const string prefabPath = "Prefabs/Gameplay/GAME_MANAGER";
 
 
 
