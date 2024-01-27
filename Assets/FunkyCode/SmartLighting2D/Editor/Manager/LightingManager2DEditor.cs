@@ -21,6 +21,8 @@ namespace FunkyCode
 		{
 			DrawProfile();
 
+			Undo.RecordObject(serializedObject.targetObject, "Modify light settings");
+
 			if (Lighting2D.ProjectSettings.shaderPreview == LightingSettings.ShaderPreview.Enabled)
 			{
 				EditorGUILayout.Space();
@@ -35,7 +37,7 @@ namespace FunkyCode
 
 					LightingManager2D.ForceUpdate();
 					Lighting2D.UpdateByProfile(projectSettings.Profile);
-
+					
 					EditorUtility.SetDirty(projectSettings);
 				}
 			}
