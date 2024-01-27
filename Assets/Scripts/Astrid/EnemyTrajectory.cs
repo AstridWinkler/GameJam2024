@@ -13,7 +13,8 @@ public class EnemyTrajectory : MonoBehaviour
     float eyeDist = 0.5f;
     float tailDist = 1.3f;
     float tail2Dist = 0.8f;
-    Vector3 distToBody;
+    float distToBody;
+    Vector3 distToTarget;
 
     public float MoveSpeed;
     public float MaxDist;
@@ -22,6 +23,7 @@ public class EnemyTrajectory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(GameManager.Gameplay.CurrentPlayer != null)
         objectToFollow = GameManager.Gameplay.CurrentPlayer.transform;
     }
 
@@ -29,22 +31,36 @@ public class EnemyTrajectory : MonoBehaviour
     {
 
         var targetDistToBody = (toObject - fromObject).normalized;
-        distToBody = Vector3.Lerp(distToBody, targetDistToBody, 3.5f * Time.deltaTime);
+        distToTarget = Vector3.Lerp(distToTarget, targetDistToBody, 3.5f * Time.deltaTime);
 
-        eyes.localPosition = distToBody * eyeDist;
-        tail.localPosition = -distToBody * tailDist;
-        tail2.localPosition = -distToBody * tail2Dist;
+        eyes.localPosition = distToTarget * eyeDist;
+        tail.localPosition = -distToTarget * tailDist;
+        tail2.localPosition = -distToTarget * tail2Dist;
 
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.gameObject.tag == "Player")
+        {
+            GameManager.Gameplay.KillPlayer();
+        }
     }
 
     void Update()
     {
+        
+
+
         if (objectToFollow == null)
         {
             Start();
+            return;
         }
 
-        if ((Vector3.Distance(transform.position, objectToFollow.position) >= MinDist) && (Vector3.Distance(transform.position, objectToFollow.position) <= MaxDist))
+        distToBody = Vector3.Distance(transform.position, objectToFollow.position);
+
+        if (distToBody <= MaxDist)
         {
             var step = MoveSpeed * Time.deltaTime;
             transform.position = Vector3.MoveTowards(transform.position, objectToFollow.position, step);
@@ -55,6 +71,8 @@ public class EnemyTrajectory : MonoBehaviour
         {
             directionDisplacement(transform.position, transform.position);
         }
+
+
 
     }
 
