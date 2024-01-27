@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea5d7a1ecb2ae247ade84e4f9a8bf9a, type: 3}
   m_Name: ProjectSettings
   m_EditorClassIdentifier: 
-  frequentlyUsedScenes: []
+  frequentlyUsedScenes:
+  - {fileID: 102900000, guid: 371623202d8b1ea468d1aa2cf6dff634, type: 3}
+  - {fileID: 102900000, guid: 20eb0011bcc3a324ca6c6b3a3f3bac50, type: 3}
   globalVariablePath: []
   activeModulesName:
   - Logiked_2DTools

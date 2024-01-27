@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/staging' branch; Version is '2021.3.33f1 (ee5a2aa03ab2) revision 15620650'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'fr' Physical Memory: 15296 MB
+Built from '2021.3/staging' branch; Version is '2021.3.34f1 (25266724e7bd) revision 2434663'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'fr' Physical Memory: 32693 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-P:\Programs\Unity\2021.3.33f1\Editor\Unity.exe
+C:\Users\MrKata\Documents\Temp\2021.3.34f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-P:/UNITY_PROJECTS_SSD/GameJam2024
+C:/Users/MrKata/Documents/Temp/GameJam2024
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51160
-Successfully changed project path to: P:/UNITY_PROJECTS_SSD/GameJam2024
-P:/UNITY_PROJECTS_SSD/GameJam2024
+50936
+Successfully changed project path to: C:/Users/MrKata/Documents/Temp/GameJam2024
+C:/Users/MrKata/Documents/Temp/GameJam2024
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,117 +47,118 @@ P:/UNITY_PROJECTS_SSD/GameJam2024
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13028] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 1743351172 [EditorId] 1743351172 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13792] Host "[IP] 192.168.1.22 [Port] 0 [Flags] 2 [Guid] 205279788 [EditorId] 205279788 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FV5M56S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13028] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 1743351172 [EditorId] 1743351172 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13792] Host "[IP] 192.168.1.22 [Port] 0 [Flags] 2 [Guid] 205279788 [EditorId] 205279788 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FV5M56S) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 263.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 86.42 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
-[Subsystems] Discovering subsystems at path P:/Programs/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path P:/UNITY_PROJECTS_SSD/GameJam2024/Assets
+Initialize engine version: 2021.3.34f1 (25266724e7bd)
+[Subsystems] Discovering subsystems at path C:/Users/MrKata/Documents/Temp/2021.3.34f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/MrKata/Documents/Temp/GameJam2024/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
     Vendor:   NVIDIA
-    VRAM:     4037 MB
-    Driver:   31.0.15.3623
+    VRAM:     8059 MB
+    Driver:   31.0.15.5123
 Initialize mono
-Mono path[0] = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/Managed'
-Mono path[1] = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
+Mono path[0] = 'C:/Users/MrKata/Documents/Temp/2021.3.34f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/MrKata/Documents/Temp/2021.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/MrKata/Documents/Temp/2021.3.34f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: P:/Programs/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004532 seconds.
+Register platform support module: C:/Users/MrKata/Documents/Temp/2021.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003151 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 273.19 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 86.34 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.396 seconds
+- Completed reload, in  0.448 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1398ms)
-		BeginReloadAssembly (183ms)
+	ReloadAssembly (448ms)
+		BeginReloadAssembly (60ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1049ms)
-			LoadAssemblies (181ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (327ms)
+			LoadAssemblies (59ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (192ms)
+			SetupTypeCache (64ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (723ms)
+			RebuildScriptCaches (16ms)
+			SetupLoadedEditorAssemblies (220ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (273ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (320ms)
-				ProcessInitializeOnLoadMethodAttributes (115ms)
+				RefreshPlugins (86ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (98ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.017264 seconds.
+Registered in 0.005450 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 185.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 89.50 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  2.418 seconds
+- Completed reload, in  1.284 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2419ms)
-		BeginReloadAssembly (222ms)
+	ReloadAssembly (1285ms)
+		BeginReloadAssembly (90ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		EndReloadAssembly (2037ms)
-			LoadAssemblies (175ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1124ms)
+			LoadAssemblies (70ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (449ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (114ms)
-			SetupLoadedEditorAssemblies (1279ms)
+			SetupTypeCache (173ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (820ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (185ms)
-				BeforeProcessingInitializeOnLoad (148ms)
-				ProcessInitializeOnLoadAttributes (758ms)
-				ProcessInitializeOnLoadMethodAttributes (178ms)
+				RefreshPlugins (90ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (553ms)
+				ProcessInitializeOnLoadMethodAttributes (90ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.20 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5826 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 47 unused Assets / (0.8 MB). Loaded Objects now: 6283.
-Memory consumption went from 239.9 MB to 239.1 MB.
-Total: 9.825300 ms (FindLiveObjects: 1.142400 ms CreateObjectMapping: 1.191500 ms MarkObjects: 6.621900 ms  DeleteObjects: 0.866600 ms)
+Unloading 5827 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (0.8 MB). Loaded Objects now: 6284.
+Memory consumption went from 240.7 MB to 239.9 MB.
+Total: 3.449300 ms (FindLiveObjects: 0.402000 ms CreateObjectMapping: 0.149300 ms MarkObjects: 2.579900 ms  DeleteObjects: 0.317400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -167,168 +168,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4591.033215 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 5888.837624 seconds.
+  path: Assets/Resources/Config/DefaultInputs.asset
+  artifactKey: Guid(0c685d7cbc0949245aeb297151952b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2059e2f4a846c8601b65084a7ad6ad49') in 0.229330 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 411.787808 seconds.
-  path: Assets/Textures/Worlds/Prison/Background/prs_BackHole_rule.asset
-  artifactKey: Guid(29b66b1b879bcaa4db0ac4c172fb4af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Background/prs_BackHole_rule.asset using Guid(29b66b1b879bcaa4db0ac4c172fb4af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a81cd5fac6a643a34d3520cf1a40b1d') in 0.014651 seconds 
+Start importing Assets/Resources/Config/DefaultInputs.asset using Guid(0c685d7cbc0949245aeb297151952b88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e3ebaf433738fe222bc0f61e3544f4') in 0.032302 seconds 
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 4.618796 seconds.
-  path: Assets/Textures/Worlds/Forest/Tiles/w3_GrassRuleBeta.asset
-  artifactKey: Guid(e78449f7b7528bc41bb89d88c295ffff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Config/KataWorldCompeteDark.asset
+  artifactKey: Guid(1b8a0c50224b66842b36f1b7d4c5e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Forest/Tiles/w3_GrassRuleBeta.asset using Guid(e78449f7b7528bc41bb89d88c295ffff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9fa83e620af0daa80fd88efdcae7b83') in 0.012127 seconds 
+Start importing Assets/Resources/Config/KataWorldCompeteDark.asset using Guid(1b8a0c50224b66842b36f1b7d4c5e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379052d0b48238cfd1aeb1425d3f789f') in 0.004978 seconds 
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 3.606536 seconds.
-  path: Assets/Textures/Worlds/Prison/Background/prs_backTiles_hole.png
-  artifactKey: Guid(0f60c3600bf712043849e28f1d6a895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 2.333023 seconds.
+  path: Assets/Resources/Logiked/ProjectSettings.asset
+  artifactKey: Guid(476f515a9fdca834e982b2845e032a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Background/prs_backTiles_hole.png using Guid(0f60c3600bf712043849e28f1d6a895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a411cf6ad2aa1ff3fd59f5ac4d32b1f3') in 0.122996 seconds 
-Number of asset objects unloaded after import = 31
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Textures/Worlds/Prison/Background/prs_window.asset
-  artifactKey: Guid(a85ead92d51f860448e26f43bbc70de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Background/prs_window.asset using Guid(a85ead92d51f860448e26f43bbc70de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d517ee2be2ff3038d42de71ff4f88b') in 0.014531 seconds 
+Start importing Assets/Resources/Logiked/ProjectSettings.asset using Guid(476f515a9fdca834e982b2845e032a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43531e98e1255d84205310aeeb3d75d0') in 0.006520 seconds 
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Textures/Worlds/Prison/Background/prs_penBackgroundWhite_loop.png
-  artifactKey: Guid(0026d4b419a3cfb4d8fd7e4669436c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 10.347772 seconds.
+  path: Assets/FunkyCode/Demos - SmartLighting2D/Demos - Basics (Overlay)/13 - Sprite Projection/LProfile Projection.asset
+  artifactKey: Guid(315745af050b53f46a69cc7827470819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Background/prs_penBackgroundWhite_loop.png using Guid(0026d4b419a3cfb4d8fd7e4669436c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030ee03d340ba9988af5beec17312889') in 0.059604 seconds 
+Start importing Assets/FunkyCode/Demos - SmartLighting2D/Demos - Basics (Overlay)/13 - Sprite Projection/LProfile Projection.asset using Guid(315745af050b53f46a69cc7827470819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe6bd551c79fc1c00f632a3961a3938') in 0.008856 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 35.133644 seconds.
+  path: Assets/External/Logiked/Logiked2DTools/Icons/logiked_animation2D.png
+  artifactKey: Guid(1e8c987e0adfbcb4aa70b58e9ffcbb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/External/Logiked/Logiked2DTools/Icons/logiked_animation2D.png using Guid(1e8c987e0adfbcb4aa70b58e9ffcbb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d3eacaf45dff296452c30badada49ec') in 0.088291 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Textures/Worlds/Prison/Background/prs_mountain.png
-  artifactKey: Guid(0f7e8d2ed62966043857676e49780b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 11.433145 seconds.
+  path: Assets/External/Logiked/LogikedSource/Icons/logiked_appDeploy.png
+  artifactKey: Guid(a124c573a4f088e409a3e971e8d4050c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Background/prs_mountain.png using Guid(0f7e8d2ed62966043857676e49780b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b9644c63c55d1442e19bf349edb986') in 0.111955 seconds 
-Number of asset objects unloaded after import = 4
+Start importing Assets/External/Logiked/LogikedSource/Icons/logiked_appDeploy.png using Guid(a124c573a4f088e409a3e971e8d4050c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c188e5bc3ada8e55fb064a05be06947c') in 0.020257 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Textures/Worlds/Prison/Background/prs_window.png
-  artifactKey: Guid(f8d56b257b0826a4f9046817c6e6bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000015 seconds.
+  path: Assets/External/Logiked/LogikedSource/Icons/logiked_GuiStyleBorder1.png
+  artifactKey: Guid(f6abbf34b17c452419a1260d05adef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Background/prs_window.png using Guid(f8d56b257b0826a4f9046817c6e6bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3659db0d9c09eb87474a9feb039a65') in 0.051924 seconds 
-Number of asset objects unloaded after import = 11
+Start importing Assets/External/Logiked/LogikedSource/Icons/logiked_GuiStyleBorder1.png using Guid(f6abbf34b17c452419a1260d05adef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c40492f6a9f91f0544e9ae6e8bf89e4') in 0.013627 seconds 
+Number of asset objects unloaded after import = 2
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009904 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.88 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.016 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2017ms)
-		BeginReloadAssembly (196ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (54ms)
-		EndReloadAssembly (1679ms)
-			LoadAssemblies (142ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (367ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (83ms)
-			SetupLoadedEditorAssemblies (1037ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (734ms)
-				ProcessInitializeOnLoadMethodAttributes (171ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.71 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5604 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 42 unused Assets / (0.8 MB). Loaded Objects now: 6296.
-Memory consumption went from 226.5 MB to 225.7 MB.
-Total: 10.432800 ms (FindLiveObjects: 0.892600 ms CreateObjectMapping: 1.616900 ms MarkObjects: 7.053100 ms  DeleteObjects: 0.868200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/External/Logiked/LogikedSource/Icons/logiked_settings.png
+  artifactKey: Guid(d65ff5f1684dca0478ee3a296abcbf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/External/Logiked/LogikedSource/Icons/logiked_settings.png using Guid(d65ff5f1684dca0478ee3a296abcbf5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d38c3988653bfc0a0c8063b682d3976') in 0.015870 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/External/Logiked/LogikedSource/Icons/logiked_manager2.png
+  artifactKey: Guid(86768d6d35a0f2d4cade2dc464ddd1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/External/Logiked/LogikedSource/Icons/logiked_manager2.png using Guid(86768d6d35a0f2d4cade2dc464ddd1d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4529d1931b1a60f37f710a602fa12fd8') in 0.017869 seconds 
+Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

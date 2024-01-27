@@ -15,7 +15,7 @@ P:/UNITY_PROJECTS_SSD/GameJam2024
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-50130
+51160
 Successfully changed project path to: P:/UNITY_PROJECTS_SSD/GameJam2024
 P:/UNITY_PROJECTS_SSD/GameJam2024
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ P:/UNITY_PROJECTS_SSD/GameJam2024
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15304] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 3341857639 [EditorId] 3341857639 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9936] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 3787025794 [EditorId] 3787025794 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15304] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 3341857639 [EditorId] 3341857639 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9936] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 3787025794 [EditorId] 3787025794 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 165.78 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 195.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path P:/Programs/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,77 +68,76 @@ Initialize mono
 Mono path[0] = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56524
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: P:/Programs/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003547 seconds.
+Registered in 0.003894 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 181.67 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 161.13 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.936 seconds
+- Completed reload, in  0.907 seconds
 Domain Reload Profiling:
-	ReloadAssembly (937ms)
-		BeginReloadAssembly (123ms)
+	ReloadAssembly (908ms)
+		BeginReloadAssembly (128ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (698ms)
-			LoadAssemblies (122ms)
+		EndReloadAssembly (660ms)
+			LoadAssemblies (126ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (138ms)
+			SetupTypeCache (139ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (469ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (436ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (182ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (161ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (199ms)
-				ProcessInitializeOnLoadMethodAttributes (73ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (68ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010668 seconds.
+Registered in 0.010545 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 163.75 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 153.32 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
-[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
 Mono: successfully reloaded assembly
-- Completed reload, in  2.232 seconds
+- Completed reload, in  2.112 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2233ms)
-		BeginReloadAssembly (165ms)
+	ReloadAssembly (2113ms)
+		BeginReloadAssembly (153ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (1932ms)
-			LoadAssemblies (138ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1838ms)
+			LoadAssemblies (136ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (387ms)
+			SetupTypeCache (350ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (1290ms)
+			RebuildScriptCaches (100ms)
+			SetupLoadedEditorAssemblies (1226ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (164ms)
-				BeforeProcessingInitializeOnLoad (144ms)
-				ProcessInitializeOnLoadAttributes (771ms)
-				ProcessInitializeOnLoadMethodAttributes (202ms)
+				RefreshPlugins (153ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (750ms)
+				ProcessInitializeOnLoadMethodAttributes (183ms)
 				AfterProcessingInitializeOnLoad (4ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -146,13 +145,113 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.79 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 5826 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 47 unused Assets / (0.8 MB). Loaded Objects now: 6283.
 Memory consumption went from 239.8 MB to 239.0 MB.
-Total: 5.284900 ms (FindLiveObjects: 0.601800 ms CreateObjectMapping: 0.192900 ms MarkObjects: 4.022500 ms  DeleteObjects: 0.465600 ms)
+Total: 10.331900 ms (FindLiveObjects: 1.450900 ms CreateObjectMapping: 1.140100 ms MarkObjects: 6.910000 ms  DeleteObjects: 0.827100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008451 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.21 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
+logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
+
+File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
+logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
+logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
+  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.999 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2000ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1698ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (384ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (1048ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (728ms)
+				ProcessInitializeOnLoadMethodAttributes (181ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.06 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5604 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (0.8 MB). Loaded Objects now: 6281.
+Memory consumption went from 222.3 MB to 221.5 MB.
+Total: 10.296000 ms (FindLiveObjects: 1.063000 ms CreateObjectMapping: 1.368100 ms MarkObjects: 6.759400 ms  DeleteObjects: 1.102500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -168,313 +267,238 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4316.463263 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 5065.143287 seconds.
+  path: Assets/Resources/Prefabs/LevelStructure/EndLevel.prefab
+  artifactKey: Guid(3b2b1c45843f7c041b802084a7e2c39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7b1a575feb5fdd3c274f88520b8da87') in 0.183233 seconds 
-Number of asset objects unloaded after import = 11
+Start importing Assets/Resources/Prefabs/LevelStructure/EndLevel.prefab using Guid(3b2b1c45843f7c041b802084a7e2c39c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd3e77983da18df4e61d58c17fbdd9c') in 0.284724 seconds 
+Number of asset objects unloaded after import = 25
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 14.10 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 56 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 58 unused Assets / (0.8 MB). Loaded Objects now: 6376.
+Memory consumption went from 116.0 MB to 115.2 MB.
+Total: 11.636500 ms (FindLiveObjects: 1.055200 ms CreateObjectMapping: 1.228100 ms MarkObjects: 8.327000 ms  DeleteObjects: 1.024100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.935873 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 216.531780 seconds.
+  path: Assets/Scenes/w4_dark/DarkLevel.asset
+  artifactKey: Guid(02f9f71c488f56841aa76c61bbb5bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c0c111c768ac9c048187771880c0b41') in 0.041180 seconds 
-Number of asset objects unloaded after import = 11
+Start importing Assets/Scenes/w4_dark/DarkLevel.asset using Guid(02f9f71c488f56841aa76c61bbb5bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cc69222fbf2064322fa369e4c8311c5') in 0.068824 seconds 
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 3.168314 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 50.220481 seconds.
+  path: Assets/Scripts/Editor/StylizedFogEditor.cs
+  artifactKey: Guid(a374be79ad75fd142bc8812b74a5b5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcafefeb9a4354ad3f6e10d22d55c015') in 0.040469 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 4.262919 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1869df6ec4a476a87dfd9fbca64980b7') in 0.038731 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 11.029488 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList
-  artifactKey: Guid(b4d7aa68a1584c94587268dc6e4116ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList using Guid(b4d7aa68a1584c94587268dc6e4116ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9b43b2589b81cb55afa6e150755cbd1') in 0.009838 seconds 
+Start importing Assets/Scripts/Editor/StylizedFogEditor.cs using Guid(a374be79ad75fd142bc8812b74a5b5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1c1589722560ac5607ea6e31fb57aa') in 0.015166 seconds 
 Number of asset objects unloaded after import = 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.054275 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/Background.prefab
-  artifactKey: Guid(46647215c0235e84d81786e23074eb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/Background.prefab using Guid(46647215c0235e84d81786e23074eb9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '530f1f824da21876c22039f97b07a596') in 0.317828 seconds 
-Number of asset objects unloaded after import = 39
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010823 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Cannot connect to Unity Package Manager local server
+File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
+logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
+
+File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
+logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
+logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
+System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
+System.Reflection.MethodBase:Invoke (object,object[])
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
+  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.918 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1919ms)
+		BeginReloadAssembly (200ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (14ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1598ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (358ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (67ms)
+			SetupLoadedEditorAssemblies (961ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (100ms)
+				ProcessInitializeOnLoadAttributes (686ms)
+				ProcessInitializeOnLoadMethodAttributes (164ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5614 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (441.3 KB). Loaded Objects now: 6356.
+Memory consumption went from 230.4 MB to 230.0 MB.
+Total: 9.674800 ms (FindLiveObjects: 1.151100 ms CreateObjectMapping: 1.503700 ms MarkObjects: 5.834300 ms  DeleteObjects: 1.153100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.535377 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_9.asset
-  artifactKey: Guid(0992ed2b1d3d05d409ce02abe403f890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 64.966273 seconds.
+  path: Assets/Textures/Effects/degrade.png
+  artifactKey: Guid(ec608eb8820305f40b06a15ca92bfe37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_9.asset using Guid(0992ed2b1d3d05d409ce02abe403f890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd3aec2ccaff417202096ec47343d70f') in 0.022727 seconds 
+Start importing Assets/Textures/Effects/degrade.png using Guid(ec608eb8820305f40b06a15ca92bfe37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a73b239f074c0a1974778a37e06cb8') in 0.210477 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.136141 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_10.asset
-  artifactKey: Guid(4eeec84e93eff69428bc03cdf62dea2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000050 seconds.
+  path: Assets/Textures/Effects/halo_circle2.png
+  artifactKey: Guid(68e06f25b491eb44db8860a491cc5200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_10.asset using Guid(4eeec84e93eff69428bc03cdf62dea2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1d1f60123d0a4525ae6ee8a9f15ea0') in 0.015359 seconds 
+Start importing Assets/Textures/Effects/halo_circle2.png using Guid(68e06f25b491eb44db8860a491cc5200) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '107bfcf16a0b0150985ab5beddfe1aae') in 0.033473 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.150578 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_11.asset
-  artifactKey: Guid(ac5d2c69aa149284a854e763b957d808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000044 seconds.
+  path: Assets/Textures/Effects/halo2.png
+  artifactKey: Guid(c6d3a29a99b8ef44680a02329caa04ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_11.asset using Guid(ac5d2c69aa149284a854e763b957d808) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bbd90d4be79626999c28c9a27262495') in 0.014305 seconds 
+Start importing Assets/Textures/Effects/halo2.png using Guid(c6d3a29a99b8ef44680a02329caa04ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9970a43a55c6d29bd3c8d56722ba4ed3') in 0.024973 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.195016 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_12.asset
-  artifactKey: Guid(99e282ef3b396884f832b16745da927f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/Effects/halo_donut.png
+  artifactKey: Guid(fd0c92cd9d0ff2045a51183ee37962bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_12.asset using Guid(99e282ef3b396884f832b16745da927f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421b4fe05d723b23419cce2899aecd04') in 0.014817 seconds 
+Start importing Assets/Textures/Effects/halo_donut.png using Guid(fd0c92cd9d0ff2045a51183ee37962bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3a7ca2463fb582f9d189c796e982c0') in 0.025751 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.164799 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_13.asset
-  artifactKey: Guid(c287b6df56c180647bc94df0658e3af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000025 seconds.
+  path: Assets/Textures/Effects/halo_circle.png
+  artifactKey: Guid(cabede867980c324bb7b2643e9b4aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_13.asset using Guid(c287b6df56c180647bc94df0658e3af7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db32eb435df2392cbb1fe63b3551cae4') in 0.014919 seconds 
+Start importing Assets/Textures/Effects/halo_circle.png using Guid(cabede867980c324bb7b2643e9b4aa2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d48d2294e3c2973e6a303b6f9c84eb3') in 0.035156 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.140593 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_14.asset
-  artifactKey: Guid(087990373951a334195c5ea3700db83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/Effects/miniHaloTexture.png
+  artifactKey: Guid(7e68aafae76489e4294f85b270b08d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_14.asset using Guid(087990373951a334195c5ea3700db83b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8c752ad703297fb548088e62275e9d') in 0.014144 seconds 
+Start importing Assets/Textures/Effects/miniHaloTexture.png using Guid(7e68aafae76489e4294f85b270b08d1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d94dfbd78fb02270010efeacc83131') in 0.032327 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.151767 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_15.asset
-  artifactKey: Guid(56bcb502fe589a54d9fc2db84ca90e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 3.139468 seconds.
+  path: Assets/Textures/Worlds/Prison/Tiles/metalSpikes.png
+  artifactKey: Guid(cdf91e736ffb8c5419f3f53c881c545f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_15.asset using Guid(56bcb502fe589a54d9fc2db84ca90e4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9986689481362cf42560c9290c674727') in 0.013884 seconds 
+Start importing Assets/Textures/Worlds/Prison/Tiles/metalSpikes.png using Guid(cdf91e736ffb8c5419f3f53c881c545f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c49db714df1f2c604c713aed58b1e01') in 0.033120 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_2_border.png
+  artifactKey: Guid(4b1a43239a874864ba875f45c1bfe05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_2_border.png using Guid(4b1a43239a874864ba875f45c1bfe05a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6db6b2571783df60fe053f1d15257a') in 0.068385 seconds 
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_Full.png
+  artifactKey: Guid(2f4159ab1f048b7429c4657f14b8cc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_Full.png using Guid(2f4159ab1f048b7429c4657f14b8cc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39edbbac1354d8657a14f570c2de0b3a') in 0.056354 seconds 
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.133943 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_16.asset
-  artifactKey: Guid(e1b44b59a7b487d4ca48f660ee924155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000050 seconds.
+  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop0.png
+  artifactKey: Guid(bf3b023b555553d44ae7ed275cd3d0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_16.asset using Guid(e1b44b59a7b487d4ca48f660ee924155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769a223cb076c1d862d0822fee4bcfdc') in 0.013601 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop0.png using Guid(bf3b023b555553d44ae7ed275cd3d0d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58ac299ecfbe52b7e00344153c7f6cd') in 0.076668 seconds 
+Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
-  Time since last request: 0.171627 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_17.asset
-  artifactKey: Guid(9d25b1bd63dbd2541955b0bdc059723c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000058 seconds.
+  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_1_border.png
+  artifactKey: Guid(d13c86a1c706341478f880ef78e1a06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_17.asset using Guid(9d25b1bd63dbd2541955b0bdc059723c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f8a30c1d7b7a0a6f358457942929a2') in 0.014479 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.139197 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_0.asset
-  artifactKey: Guid(e8e42b4f406e6ee43842a754e92be1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_0.asset using Guid(e8e42b4f406e6ee43842a754e92be1e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d10a540698f7948b119d23d38b8e51') in 0.014226 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.079487 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_1.asset
-  artifactKey: Guid(0c3544359f204774ea11764ac5da1a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_1.asset using Guid(0c3544359f204774ea11764ac5da1a48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cdb672e390e1e3ac3687a8398b33f69') in 0.014715 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.192113 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_2.asset
-  artifactKey: Guid(c3c8354b35100dc4c9fe3865a9f15275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_2.asset using Guid(c3c8354b35100dc4c9fe3865a9f15275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f4dc087eb3448cc065ac891c051b85') in 0.015509 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.137378 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_3.asset
-  artifactKey: Guid(79a7d70790952874aaf855599a4023a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_3.asset using Guid(79a7d70790952874aaf855599a4023a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9ea224736fbe8129f7c659f569f6ba') in 0.014704 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.279595 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_4.asset
-  artifactKey: Guid(90e315d5fed65644f84f0d153b489647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_4.asset using Guid(90e315d5fed65644f84f0d153b489647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e30aabecd8e06760e3bcfe5cbf6119c0') in 0.016165 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.441915 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_5.asset
-  artifactKey: Guid(580e64661808eb74383e3809351e5325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_5.asset using Guid(580e64661808eb74383e3809351e5325) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f54b595511052e05191537a0bcbe0e9f') in 0.014805 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.390758 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_6.asset
-  artifactKey: Guid(d24acdce3510f0d498f65ee4eac128b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_6.asset using Guid(d24acdce3510f0d498f65ee4eac128b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0c1d6d15551aa886fa7fc4adfc35e31') in 0.013464 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.495573 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_7.asset
-  artifactKey: Guid(e45c15ce042a1c043b7dc29f9e03d3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_7.asset using Guid(e45c15ce042a1c043b7dc29f9e03d3e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b68c0e0f9a5ab710a461c5cf55e05d4a') in 0.015103 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.368260 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_8.asset
-  artifactKey: Guid(5b74a2aba3184db458f1b0d457394cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_8.asset using Guid(5b74a2aba3184db458f1b0d457394cc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fb1c553d2f9f142fac90996ddaec6eb') in 0.015381 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.139198 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_9.asset
-  artifactKey: Guid(8a60ada74440e88469285f4f66c11086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_9.asset using Guid(8a60ada74440e88469285f4f66c11086) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3892a4e30fcd5c69be9fae02b15b7de') in 0.016660 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.152134 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_10.asset
-  artifactKey: Guid(0bed7276db5d80d4fb9c8cb72df63112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_10.asset using Guid(0bed7276db5d80d4fb9c8cb72df63112) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1882f99d1e15649bac78934a91a26774') in 0.013913 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.126626 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_11.asset
-  artifactKey: Guid(ea160b50c87a45844b3743263a273aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_11.asset using Guid(ea160b50c87a45844b3743263a273aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d93dd6d6f5f74f27ab9d55939fc2b1') in 0.014915 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_12.asset
-  artifactKey: Guid(6ddbb6ee3cd486c48b1248532e90f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_12.asset using Guid(6ddbb6ee3cd486c48b1248532e90f4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fa1e84186073b46e3b80bd5ae195b6') in 0.013888 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.099053 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_13.asset
-  artifactKey: Guid(daaf9b885f21df848b5fa6f23c8a2e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_13.asset using Guid(daaf9b885f21df848b5fa6f23c8a2e3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a177f38b9e3967a5f8efecae89ef7343') in 0.013538 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.130765 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_14.asset
-  artifactKey: Guid(11df38690b674e14585f7a9b3877dcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_14.asset using Guid(11df38690b674e14585f7a9b3877dcc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4afd70b0899e8eb1c45b73fd19f2a127') in 0.016085 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.154780 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_15.asset
-  artifactKey: Guid(6712f4ffa41beaf438fe72bbd4fa7a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_15.asset using Guid(6712f4ffa41beaf438fe72bbd4fa7a3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9e6a21dcdb05ca7dffdf11c03fcfa41') in 0.015241 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.130888 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_0.asset
-  artifactKey: Guid(cc0f6dc887152664d8af90dd4718e67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_0.asset using Guid(cc0f6dc887152664d8af90dd4718e67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d855ba8f135d34995799f0131361ad') in 0.015045 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.127432 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_1.asset
-  artifactKey: Guid(f9b8c1368e53c504fb9caf166022eed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_1.asset using Guid(f9b8c1368e53c504fb9caf166022eed7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34f23d190adfcc32c62e8ff97fdf106f') in 0.013407 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.172109 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_2.asset
-  artifactKey: Guid(88a636f07f7d0f14f9f93f15714f952d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_2.asset using Guid(88a636f07f7d0f14f9f93f15714f952d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f0c73d7be7423f686b51001bcb7a246') in 0.014620 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.074358 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_3.asset
-  artifactKey: Guid(57997caf32e21d446a52b708a7c4dff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_3.asset using Guid(57997caf32e21d446a52b708a7c4dff9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb395a8fb575774ddc8da7308cd2c5c5') in 0.015579 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.085905 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_4.asset
-  artifactKey: Guid(b387f05ea11f39d4785d9b456e04978a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_4.asset using Guid(b387f05ea11f39d4785d9b456e04978a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c99cecccf28aa8304caa4908f813f9c') in 0.014386 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.007491 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_6.asset
-  artifactKey: Guid(0261e55947b07e948947529857f5ef61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_6.asset using Guid(0261e55947b07e948947529857f5ef61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6406487d0c3e04c92b0a65a95dca56df') in 0.015567 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.002012 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_7.asset
-  artifactKey: Guid(0e092f879dc615a4e9ba80e9e1e05157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_7.asset using Guid(0e092f879dc615a4e9ba80e9e1e05157) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a05dd20e2087a4dc1f19d559172491') in 0.014487 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.238785 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_2_0.asset
-  artifactKey: Guid(33684de5faf5fda43a63ae7ba1327946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_2_0.asset using Guid(33684de5faf5fda43a63ae7ba1327946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e138fc1af225787f46d353ef0688560') in 0.013585 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_1_border.png using Guid(d13c86a1c706341478f880ef78e1a06f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f81154619400fabb134d3d412839e302') in 0.050859 seconds 
+Number of asset objects unloaded after import = 6
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
