@@ -15,7 +15,7 @@ P:/UNITY_PROJECTS_SSD/GameJam2024
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50130
+51160
 Successfully changed project path to: P:/UNITY_PROJECTS_SSD/GameJam2024
 P:/UNITY_PROJECTS_SSD/GameJam2024
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ P:/UNITY_PROJECTS_SSD/GameJam2024
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10656] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 539433741 [EditorId] 539433741 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13028] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 1743351172 [EditorId] 1743351172 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10656] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 539433741 [EditorId] 539433741 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13028] Host "[IP] 192.168.1.88 [Port] 0 [Flags] 2 [Guid] 1743351172 [EditorId] 1743351172 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MN1O5LP) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 143.66 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 263.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path P:/Programs/Unity/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,848 +68,90 @@ Initialize mono
 Mono path[0] = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'P:/Programs/Unity/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56760
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56996
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: P:/Programs/Unity/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004270 seconds.
+Registered in 0.004532 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 122.96 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 273.19 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.776 seconds
+- Completed reload, in  1.396 seconds
 Domain Reload Profiling:
-	ReloadAssembly (777ms)
-		BeginReloadAssembly (105ms)
+	ReloadAssembly (1398ms)
+		BeginReloadAssembly (183ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (549ms)
-			LoadAssemblies (103ms)
+		EndReloadAssembly (1049ms)
+			LoadAssemblies (181ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (119ms)
+			SetupTypeCache (192ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (351ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (723ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (123ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
+				RefreshPlugins (273ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (320ms)
+				ProcessInitializeOnLoadMethodAttributes (115ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006277 seconds.
+Registered in 0.017264 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 124.43 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 185.33 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.840 seconds
+- Completed reload, in  2.418 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1841ms)
-		BeginReloadAssembly (155ms)
+	ReloadAssembly (2419ms)
+		BeginReloadAssembly (222ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (11ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (1567ms)
-			LoadAssemblies (121ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (2037ms)
+			LoadAssemblies (175ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (318ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (76ms)
-			SetupLoadedEditorAssemblies (1037ms)
+			SetupTypeCache (449ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (114ms)
+			SetupLoadedEditorAssemblies (1279ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (125ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (665ms)
-				ProcessInitializeOnLoadMethodAttributes (115ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.95 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5299 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 41 unused Assets / (0.7 MB). Loaded Objects now: 5750.
-Memory consumption went from 210.3 MB to 209.6 MB.
-Total: 4.625500 ms (FindLiveObjects: 0.606700 ms CreateObjectMapping: 0.261600 ms MarkObjects: 3.336300 ms  DeleteObjects: 0.419200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1368.611848 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(b5e9a03c2375f4541818d168cb9dd6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(b5e9a03c2375f4541818d168cb9dd6a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d66bdc8a49265ae85b358178c0700f8') in 0.056161 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 61.358852 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.007247 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.285529 seconds.
-  path: Assets/Settings
-  artifactKey: Guid(0220aab0833d04faeb927d84ca6cc40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Settings using Guid(0220aab0833d04faeb927d84ca6cc40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd681da83228de6eb57118ec3dd4db8fe') in 0.008209 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.775931 seconds.
-  path: Assets/Settings/Lit2DSceneTemplate.scenetemplate
-  artifactKey: Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Settings/Lit2DSceneTemplate.scenetemplate using Guid(d03ed43fc9d8a4f2e9fa70c1c7916eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca8933c12b6098a5df52859f6839372') in 0.127942 seconds 
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 8.977883 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(ab2ce786b8413014fb71a4ea80384062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes using Guid(ab2ce786b8413014fb71a4ea80384062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5a3a8199bf998b1d061a2e5b9c0828') in 0.008161 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 336.134879 seconds.
-  path: Assets/Scenes/MainMenu.unity
-  artifactKey: Guid(c04a0c73b6d3a7f448addada38a45616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/MainMenu.unity using Guid(c04a0c73b6d3a7f448addada38a45616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b47e1fcb40de37a5330300c0b01894f1') in 0.009467 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.412250 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(f9dbfeeafbe1df94a831adadcae094d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/SampleScene.unity using Guid(f9dbfeeafbe1df94a831adadcae094d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '055da51883b5b808937a3e2af686ca99') in 0.007562 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 10.041773 seconds.
-  path: Assets/Scenes/w3_snow/Level3-2.unity
-  artifactKey: Guid(dc0dd2ff0c7dd8145af2ccdb93359ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/w3_snow/Level3-2.unity using Guid(dc0dd2ff0c7dd8145af2ccdb93359ad7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6476772c57fe941dff10de3db16822c9') in 0.007987 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.995739 seconds.
-  path: Assets/Scenes/w3_snow/SnowLevel.asset
-  artifactKey: Guid(15765ba7d4fa3c441beb34e0d84fad20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/w3_snow/SnowLevel.asset using Guid(15765ba7d4fa3c441beb34e0d84fad20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7272ef485eb5aa5ceb23f6c37242b2d3') in 0.010962 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 2.147112 seconds.
-  path: Assets/Scenes/w3_snow/Level3-8.unity
-  artifactKey: Guid(28f755ce8c7b714448405697fa3e2f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/w3_snow/Level3-8.unity using Guid(28f755ce8c7b714448405697fa3e2f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbf35e0744a4f37360e677431bee6e4') in 0.008274 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.381860 seconds.
-  path: Assets/Scenes/world1/World1.asset
-  artifactKey: Guid(8ee7aedba37b44a408899c321cacbd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/world1/World1.asset using Guid(8ee7aedba37b44a408899c321cacbd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1c66b86acd9559fe7ff82d293ccb63f') in 0.008231 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.762722 seconds.
-  path: Assets/Scenes/world1/Level1.unity
-  artifactKey: Guid(ec607577841f9ab49ab774ba6ce58f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/world1/Level1.unity using Guid(ec607577841f9ab49ab774ba6ce58f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e3e2a5fd44b788af906e200a17a444') in 0.007942 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.440362 seconds.
-  path: Assets/Scenes/world1/Level3.unity
-  artifactKey: Guid(71784c182f12a0243ae7d73b4f6c5319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/world1/Level3.unity using Guid(71784c182f12a0243ae7d73b4f6c5319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a51e28f31f71759382908b3cc657d597') in 0.007944 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.160773 seconds.
-  path: Assets/Scenes/world1/Level2.unity
-  artifactKey: Guid(97515b5b07ea3ff44983f653b4e0f88c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/world1/Level2.unity using Guid(97515b5b07ea3ff44983f653b4e0f88c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee6607e17b049dfe2a29830c64f3331') in 0.008145 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 16.918559 seconds.
-  path: Assets/Scenes/world2/World2.asset
-  artifactKey: Guid(dccc79a56c3fbc54ba9e9b1b3c6bfa97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/world2/World2.asset using Guid(dccc79a56c3fbc54ba9e9b1b3c6bfa97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b850ac6f2af4a67b1ef5de28a5b828') in 0.008394 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.234144 seconds.
-  path: Assets/Scenes/world2/level2-1.unity
-  artifactKey: Guid(4712a07eb1371af4ab12503dee8efcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/world2/level2-1.unity using Guid(4712a07eb1371af4ab12503dee8efcc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddba514449e28248d0a626ebff1cf6ed') in 0.010634 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.851173 seconds.
-  path: Assets/Scenes/w4_dark/DarkLevel.asset
-  artifactKey: Guid(02f9f71c488f56841aa76c61bbb5bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/w4_dark/DarkLevel.asset using Guid(02f9f71c488f56841aa76c61bbb5bb08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b067750d8442721f6e661faa8c174bd4') in 0.007899 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 1.787813 seconds.
-  path: Assets/Scenes/w3_snow/Level3-1.unity
-  artifactKey: Guid(34263dab50c426c46aa142071589add7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scenes/w3_snow/Level3-1.unity using Guid(34263dab50c426c46aa142071589add7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d5e9839322eefacd44bed209579ca1') in 0.007832 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 20.238383 seconds.
-  path: Assets/External/Logiked/Logiked2DTools/Logiked_2DTools.asmdef
-  artifactKey: Guid(a20c51ea14ca2aa49af5fdeb824302fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/External/Logiked/Logiked2DTools/Logiked_2DTools.asmdef using Guid(a20c51ea14ca2aa49af5fdeb824302fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba130cfb6a60c597d36dc4d2a47dd27d') in 0.008990 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.568317 seconds.
-  path: Assets/External/Logiked/LogikedSource/Logiked_Source.asmdef
-  artifactKey: Guid(826e301675b6e2e438382282b70a6219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/External/Logiked/LogikedSource/Logiked_Source.asmdef using Guid(826e301675b6e2e438382282b70a6219) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b726f799d0456f879649ac0f72fcb28c') in 0.007474 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007839 seconds.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.743 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1744ms)
-		BeginReloadAssembly (183ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1459ms)
-			LoadAssemblies (131ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (321ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (934ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (135ms)
-				ProcessInitializeOnLoadAttributes (657ms)
-				ProcessInitializeOnLoadMethodAttributes (131ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.65 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5607 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 126 unused Assets / (4.6 MB). Loaded Objects now: 6131.
-Memory consumption went from 229.3 MB to 224.7 MB.
-Total: 5.661400 ms (FindLiveObjects: 0.528000 ms CreateObjectMapping: 0.152500 ms MarkObjects: 2.942600 ms  DeleteObjects: 2.037400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007253 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.616 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1617ms)
-		BeginReloadAssembly (161ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1355ms)
-			LoadAssemblies (117ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (295ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (863ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (630ms)
-				ProcessInitializeOnLoadMethodAttributes (129ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5597 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 131 unused Assets / (4.4 MB). Loaded Objects now: 6128.
-Memory consumption went from 229.0 MB to 224.6 MB.
-Total: 5.581000 ms (FindLiveObjects: 0.531300 ms CreateObjectMapping: 0.163500 ms MarkObjects: 2.848700 ms  DeleteObjects: 2.036500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008761 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.699 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1700ms)
-		BeginReloadAssembly (176ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1402ms)
-			LoadAssemblies (135ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (309ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (881ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (637ms)
-				ProcessInitializeOnLoadMethodAttributes (130ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5619 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 119 unused Assets / (4.4 MB). Loaded Objects now: 6152.
-Memory consumption went from 229.7 MB to 225.3 MB.
-Total: 6.307500 ms (FindLiveObjects: 0.656200 ms CreateObjectMapping: 0.154300 ms MarkObjects: 3.110500 ms  DeleteObjects: 2.385400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 661.482064 seconds.
-  path: Assets/Scripts/Editor/StylizedFogEditor.cs
-  artifactKey: Guid(a374be79ad75fd142bc8812b74a5b5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/Editor/StylizedFogEditor.cs using Guid(a374be79ad75fd142bc8812b74a5b5ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e1c1589722560ac5607ea6e31fb57aa') in 0.033696 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007838 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.18 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.593 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1593ms)
-		BeginReloadAssembly (165ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1331ms)
-			LoadAssemblies (124ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (284ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (54ms)
-			SetupLoadedEditorAssemblies (855ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (90ms)
-				ProcessInitializeOnLoadAttributes (629ms)
-				ProcessInitializeOnLoadMethodAttributes (126ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.22 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5686 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 119 unused Assets / (4.4 MB). Loaded Objects now: 6222.
-Memory consumption went from 231.3 MB to 226.9 MB.
-Total: 5.735400 ms (FindLiveObjects: 0.549100 ms CreateObjectMapping: 0.159100 ms MarkObjects: 2.749000 ms  DeleteObjects: 2.277000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007518 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.680 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1680ms)
-		BeginReloadAssembly (170ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (48ms)
-		EndReloadAssembly (1401ms)
-			LoadAssemblies (120ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (286ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (910ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (661ms)
-				ProcessInitializeOnLoadMethodAttributes (143ms)
+				RefreshPlugins (185ms)
+				BeforeProcessingInitializeOnLoad (148ms)
+				ProcessInitializeOnLoadAttributes (758ms)
+				ProcessInitializeOnLoadMethodAttributes (178ms)
 				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.99 ms, found 4 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 2.56 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5686 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 119 unused Assets / (4.4 MB). Loaded Objects now: 6225.
-Memory consumption went from 231.4 MB to 227.1 MB.
-Total: 7.472000 ms (FindLiveObjects: 0.647700 ms CreateObjectMapping: 0.443900 ms MarkObjects: 3.679000 ms  DeleteObjects: 2.699700 ms)
+Unloading 5826 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 47 unused Assets / (0.8 MB). Loaded Objects now: 6283.
+Memory consumption went from 239.9 MB to 239.1 MB.
+Total: 9.825300 ms (FindLiveObjects: 1.142400 ms CreateObjectMapping: 1.191500 ms MarkObjects: 6.621900 ms  DeleteObjects: 0.866600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -925,210 +167,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 95.217094 seconds.
-  path: Assets/Scripts/Tests/Player/Player_movement 1.physicsMaterial2D
-  artifactKey: Guid(603bc2e701a885d489eed66961168518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 4591.033215 seconds.
+  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
+  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/Tests/Player/Player_movement 1.physicsMaterial2D using Guid(603bc2e701a885d489eed66961168518) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d64c3bb23bb4ab9ac103ea4e1c8190') in 0.029031 seconds 
+Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2059e2f4a846c8601b65084a7ad6ad49') in 0.229330 seconds 
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 411.787808 seconds.
+  path: Assets/Textures/Worlds/Prison/Background/prs_BackHole_rule.asset
+  artifactKey: Guid(29b66b1b879bcaa4db0ac4c172fb4af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Background/prs_BackHole_rule.asset using Guid(29b66b1b879bcaa4db0ac4c172fb4af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a81cd5fac6a643a34d3520cf1a40b1d') in 0.014651 seconds 
 Number of asset objects unloaded after import = 1
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007561 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.38 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.629 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1630ms)
-		BeginReloadAssembly (162ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1367ms)
-			LoadAssemblies (116ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (285ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (877ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (98ms)
-				ProcessInitializeOnLoadAttributes (634ms)
-				ProcessInitializeOnLoadMethodAttributes (132ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.74 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5686 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 119 unused Assets / (4.4 MB). Loaded Objects now: 6228.
-Memory consumption went from 231.5 MB to 227.1 MB.
-Total: 6.505600 ms (FindLiveObjects: 0.635300 ms CreateObjectMapping: 0.202000 ms MarkObjects: 3.417400 ms  DeleteObjects: 2.249300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 4.618796 seconds.
+  path: Assets/Textures/Worlds/Forest/Tiles/w3_GrassRuleBeta.asset
+  artifactKey: Guid(e78449f7b7528bc41bb89d88c295ffff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Forest/Tiles/w3_GrassRuleBeta.asset using Guid(e78449f7b7528bc41bb89d88c295ffff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9fa83e620af0daa80fd88efdcae7b83') in 0.012127 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 3.606536 seconds.
+  path: Assets/Textures/Worlds/Prison/Background/prs_backTiles_hole.png
+  artifactKey: Guid(0f60c3600bf712043849e28f1d6a895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Background/prs_backTiles_hole.png using Guid(0f60c3600bf712043849e28f1d6a895e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a411cf6ad2aa1ff3fd59f5ac4d32b1f3') in 0.122996 seconds 
+Number of asset objects unloaded after import = 31
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Textures/Worlds/Prison/Background/prs_window.asset
+  artifactKey: Guid(a85ead92d51f860448e26f43bbc70de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Background/prs_window.asset using Guid(a85ead92d51f860448e26f43bbc70de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d517ee2be2ff3038d42de71ff4f88b') in 0.014531 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Textures/Worlds/Prison/Background/prs_penBackgroundWhite_loop.png
+  artifactKey: Guid(0026d4b419a3cfb4d8fd7e4669436c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Background/prs_penBackgroundWhite_loop.png using Guid(0026d4b419a3cfb4d8fd7e4669436c70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '030ee03d340ba9988af5beec17312889') in 0.059604 seconds 
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Textures/Worlds/Prison/Background/prs_mountain.png
+  artifactKey: Guid(0f7e8d2ed62966043857676e49780b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Background/prs_mountain.png using Guid(0f7e8d2ed62966043857676e49780b27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b9644c63c55d1442e19bf349edb986') in 0.111955 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Textures/Worlds/Prison/Background/prs_window.png
+  artifactKey: Guid(f8d56b257b0826a4f9046817c6e6bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Textures/Worlds/Prison/Background/prs_window.png using Guid(f8d56b257b0826a4f9046817c6e6bd01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e3659db0d9c09eb87474a9feb039a65') in 0.051924 seconds 
+Number of asset objects unloaded after import = 11
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008014 seconds.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
+Registered in 0.009904 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.88 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
@@ -1174,244 +282,40 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.921 seconds
+- Completed reload, in  2.016 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1922ms)
-		BeginReloadAssembly (206ms)
+	ReloadAssembly (2017ms)
+		BeginReloadAssembly (196ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (56ms)
-		EndReloadAssembly (1602ms)
-			LoadAssemblies (155ms)
+			CreateAndSetChildDomain (54ms)
+		EndReloadAssembly (1679ms)
+			LoadAssemblies (142ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (339ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (67ms)
-			SetupLoadedEditorAssemblies (1002ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (145ms)
-				ProcessInitializeOnLoadAttributes (694ms)
-				ProcessInitializeOnLoadMethodAttributes (150ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Script is not up to date after domain reload: guid(2266c920009c8b94fb16187f19110142) path("Assets/External/Tilemap/Tiles/Rule Override Tile/Scripts/Editor/PopulateRuleOverrideTileWizard.cs") state(2)
-Script is not up to date after domain reload: guid(f336ea6ad0306eb4f8f1b50f0a6345c3) path("Assets/External/Tilemap/Brushes/Group Brush/Scripts/Editor/GroupBrush.cs") state(2)
-Script is not up to date after domain reload: guid(a72318e4281ad404ea60502177c1a6f6) path("Assets/External/Tilemap/Brushes/Line Brush/Scripts/Editor/LineBrush.cs") state(2)
-Script is not up to date after domain reload: guid(20e8a3c119b8f4b409fb76440831c56f) path("Assets/External/Tilemap/GridInformation/Scripts/GridInformation.cs") state(2)
-Script is not up to date after domain reload: guid(19349e4e9d505014f81fbfdecd864c4d) path("Assets/External/Tilemap/Tiles/Hexagonal Rule Tile/HexagonalRuleTile.cs") state(2)
-Script is not up to date after domain reload: guid(4d57e6d6631126d4cb3a767bbcb8387d) path("Assets/External/Tilemap/Brushes/GameObject Brush/Scripts/Editor/GameObjectBrush.cs") state(2)
-Script is not up to date after domain reload: guid(0f08eb755c9ec9b4eaed977738692188) path("Assets/External/Tilemap/Tiles/Rule Tile/Scripts/Editor/RuleTileEditor.cs") state(2)
-Script is not up to date after domain reload: guid(fdd731c8c42c9204aa737596f72f9838) path("Assets/External/Tilemap/Tiles/Animated Tile/Scripts/AnimatedTile.cs") state(2)
-Script is not up to date after domain reload: guid(aea4512a3c86e374d93060245f63e6dc) path("Assets/External/Tilemap/Tiles/Rule Override Tile/Scripts/Editor/RuleOverrideTileEditor.cs") state(2)
-Script is not up to date after domain reload: guid(dcb6cf898aecb054ea5949236a350eb1) path("Assets/External/Tilemap/Tiles/Rule Tile/Scripts/Editor/CustomRuleTileMenu.cs") state(2)
-Script is not up to date after domain reload: guid(114193e6f8de4094d96a78c479dcabb7) path("Assets/External/Tilemap/Tiles/Rule Tile/Scripts/RuleTile.cs") state(2)
-Script is not up to date after domain reload: guid(34692853af94c7e418be4a0e4cb4873c) path("Assets/External/Tilemap/Tiles/Hexagonal Rule Tile/Editor/HexagonalRuleTileEditor.cs") state(2)
-Script is not up to date after domain reload: guid(57244d6d2a3e8a54bae59ef3813523e9) path("Assets/External/Tilemap/Brushes/Random Brush/Scripts/Editor/RandomBrush.cs") state(2)
-Script is not up to date after domain reload: guid(0192bd3ae9540404783d919995957601) path("Assets/External/Tilemap/Tiles/Rule Override Tile/Scripts/RuleOverrideTile.cs") state(2)
-Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5687 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 124 unused Assets / (4.6 MB). Loaded Objects now: 6235.
-Memory consumption went from 231.8 MB to 227.2 MB.
-Total: 7.333300 ms (FindLiveObjects: 0.736700 ms CreateObjectMapping: 0.296700 ms MarkObjects: 3.794000 ms  DeleteObjects: 2.504100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: 6b0e35c9178b02a6363f3721b7b8e397 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008975 seconds.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.80 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-ArgumentException: An item with the same key has already been added. Key: 00000000000000000000000000000000
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].TryInsert (TKey key, TValue value, System.Collections.Generic.InsertionBehavior behavior) [0x0015a] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Collections.Generic.Dictionary`2[TKey,TValue].Add (TKey key, TValue value) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (TSource[] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x0001c] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector, System.Collections.Generic.IEqualityComparer`1[T] comparer) [0x00043] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at System.Linq.Enumerable.ToDictionary[TSource,TKey] (System.Collections.Generic.IEnumerable`1[T] source, System.Func`2[T,TResult] keySelector) [0x00000] in <06cfd796a56e417bab3ed4200b0661b2>:0 
-  at UnityEditor.Scripting.ScriptCompilation.LoadingAssemblyDefinition.SetAllCustomScriptAssemblyReferenceJsonsContents (System.String[] paths, System.String[] contents) [0x00172] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:LogException(Exception)
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:EmitExceptionsAsErrors(Exception[])
-UnityEditor.Scripting.ScriptCompilation.EditorCompilationInterface:SetAllCustomScriptAssemblyReferenceJsons(String[], String[])
-
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:464)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-File at path Assets/Resources/Logiked//ProjectSettings.asset is corrupted. Check in project window.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-logiked.source.editor.LogikedProjectConfig:get_Instance () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:513)
-logiked.source.editor.LogikedProjectConfig:RebuildActivePuginsCache () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:480)
-logiked.source.editor.LogikedProjectConfig:OnLoadCreateProjectConfig () (at Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs:465)
-System.Reflection.RuntimeMethodInfo:Invoke (object,System.Reflection.BindingFlags,System.Reflection.Binder,object[],System.Globalization.CultureInfo)
-System.Reflection.MethodBase:Invoke (object,object[])
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-(Filename: Assets/External/Logiked/LogikedSource/LogikedProjectConfig.cs Line: 513)
-
-System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
-  at logiked.source.editor.LogikedProjectConfig.RebuildActivePuginsCache () [0x0002f] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:480 
-  at logiked.source.editor.LogikedProjectConfig.OnLoadCreateProjectConfig () [0x00006] in P:\UNITY_PROJECTS_SSD\GameJam2024\Assets\External\Logiked\LogikedSource\LogikedProjectConfig.cs:465 
-  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <7e05db41a20b45108859fa03b97088d4>:0 
-   --- End of inner exception stack trace ---
-  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00083] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <7e05db41a20b45108859fa03b97088d4>:0 
-  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x000a5] in <06837d428b6d46f581d93f9597703696>:0 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.878 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1879ms)
-		BeginReloadAssembly (200ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (57ms)
-		EndReloadAssembly (1552ms)
-			LoadAssemblies (135ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (349ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (71ms)
-			SetupLoadedEditorAssemblies (972ms)
+			SetupTypeCache (367ms)
+			ReleaseScriptCaches (4ms)
+			RebuildScriptCaches (83ms)
+			SetupLoadedEditorAssemblies (1037ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (157ms)
-				ProcessInitializeOnLoadAttributes (655ms)
-				ProcessInitializeOnLoadMethodAttributes (148ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (117ms)
+				ProcessInitializeOnLoadAttributes (734ms)
+				ProcessInitializeOnLoadMethodAttributes (171ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5686 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 127 unused Assets / (4.6 MB). Loaded Objects now: 6245.
-Memory consumption went from 231.9 MB to 227.4 MB.
-Total: 7.085600 ms (FindLiveObjects: 0.532300 ms CreateObjectMapping: 0.187500 ms MarkObjects: 3.598100 ms  DeleteObjects: 2.766300 ms)
+Unloading 5604 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 42 unused Assets / (0.8 MB). Loaded Objects now: 6296.
+Memory consumption went from 226.5 MB to 225.7 MB.
+Total: 10.432800 ms (FindLiveObjects: 0.892600 ms CreateObjectMapping: 1.616900 ms MarkObjects: 7.053100 ms  DeleteObjects: 0.868200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -1425,155 +329,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1651.342946 seconds.
-  path: Assets/Textures/Items
-  artifactKey: Guid(5f75fa6f64f65d142b1343ff413e5809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Items using Guid(5f75fa6f64f65d142b1343ff413e5809) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1531d72b86aba5740f731c7b0a58cf2') in 0.025968 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 42.351371 seconds.
-  path: Assets/Textures/Effects
-  artifactKey: Guid(567adf5d16d16e449a1007b38b380e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Effects using Guid(567adf5d16d16e449a1007b38b380e34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfd0cce2447e006866503c534c926528') in 0.009683 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.349852 seconds.
-  path: Assets/Textures/Worlds
-  artifactKey: Guid(1ccc38f67afde6a41ae0ed49ac4a8bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds using Guid(1ccc38f67afde6a41ae0ed49ac4a8bc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aee2e8b7f94ed2cda0a49edf82b79c85') in 0.011824 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.706556 seconds.
-  path: Assets/Textures/Worlds/Mountain
-  artifactKey: Guid(cfeb88fc106811c46b46ba297970b21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Mountain using Guid(cfeb88fc106811c46b46ba297970b21b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1c7bb16d61a665b3a8c2b4ce91e3656') in 0.011131 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.480585 seconds.
-  path: Assets/Textures/Worlds/Prison
-  artifactKey: Guid(d0bd1376851009e40a09d60ce20b59e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison using Guid(d0bd1376851009e40a09d60ce20b59e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32b6f7f7ff6abdf32c6f657acca81b28') in 0.009330 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.980375 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles
-  artifactKey: Guid(2c80670ac62312745b1c4b134feb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles using Guid(2c80670ac62312745b1c4b134feb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22d1943478fb96049ea9caa22ffac23e') in 0.009522 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.057887 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/metalSpikes.png
-  artifactKey: Guid(cdf91e736ffb8c5419f3f53c881c545f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/metalSpikes.png using Guid(cdf91e736ffb8c5419f3f53c881c545f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a51b79e4bfda6b2a48f0f6b3b1b249b') in 0.145406 seconds 
-Number of asset objects unloaded after import = 4
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/Prs_brickRule2.asset
-  artifactKey: Guid(8fdacb818af9ffb4a9ecdc6049e45a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/Prs_brickRule2.asset using Guid(8fdacb818af9ffb4a9ecdc6049e45a0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f278c867b82a32076076e06d46f65305') in 0.025738 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/Prs_simpleRule.asset
-  artifactKey: Guid(02a9df84ee54f0e409fb4d122fca49f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/Prs_simpleRule.asset using Guid(02a9df84ee54f0e409fb4d122fca49f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9e22d9abb68f36435b563e78ffc0633') in 0.015132 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_Full.png
-  artifactKey: Guid(2f4159ab1f048b7429c4657f14b8cc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_Full.png using Guid(2f4159ab1f048b7429c4657f14b8cc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed2a84c7a2b40e1bf96b3a467690efa') in 0.060945 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2e8452dd0f0092839067b71e2be4abd') in 0.065994 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_1.png
-  artifactKey: Guid(8cd5142796d29e14f805db6cec1c99e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_1.png using Guid(8cd5142796d29e14f805db6cec1c99e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7313e2cada3b09db639182459d0c70b9') in 0.051982 seconds 
-Number of asset objects unloaded after import = 10
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_2.png
-  artifactKey: Guid(ea5134cb7c9f08c40a32519ad3a48087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tiles_2.png using Guid(ea5134cb7c9f08c40a32519ad3a48087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1db96e9142ff2c78e8e0364d6682c88') in 0.049347 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 7.707999 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png
-  artifactKey: Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/prs_Tile_brickLoop2.png using Guid(00bdcbfb06623d344be2568f702620e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270b551323b2d8cc50da5c4ccb2a6a2d') in 0.051628 seconds 
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 23.281536 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/metalSpikes_0.asset
-  artifactKey: Guid(2e6a8c24269cca642a9a7df0be56ebf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/metalSpikes_0.asset using Guid(2e6a8c24269cca642a9a7df0be56ebf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355d4d3ee0726f7923aeb393f69c3f39') in 0.058814 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_3.asset
-  artifactKey: Guid(a237046cab799384cb54394dd69220c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_3.asset using Guid(a237046cab799384cb54394dd69220c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43bd9acd26e2cbe96c3dba0a09cf31b7') in 0.018743 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_8.asset
-  artifactKey: Guid(65be2bc372bb74841977174e4ca40d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_8.asset using Guid(65be2bc372bb74841977174e4ca40d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6aaf96337e3955a7ebb8d6d7239585d') in 0.017695 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_4.asset
-  artifactKey: Guid(3b2220fd97c48964ead98e1f84a955e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tile_brickLoop0_4.asset using Guid(3b2220fd97c48964ead98e1f84a955e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc02cd5169ebe69ec53a421b6847790') in 0.017610 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 17.647761 seconds.
-  path: Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_5.asset
-  artifactKey: Guid(ea30071c5cd45354689fbba9323a575b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Textures/Worlds/Prison/Tiles/tileList/prs_Tiles_1_border_5.asset using Guid(ea30071c5cd45354689fbba9323a575b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f00d302c41383c8af3b6dbece4c304') in 0.015204 seconds 
-Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
