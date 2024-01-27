@@ -5,7 +5,49 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/MainMenu.unity
+    guid: c04a0c73b6d3a7f448addada38a45616
+  - enabled: 0
+    path: Assets/Scenes/world1/Level1.unity
+    guid: ec607577841f9ab49ab774ba6ce58f50
+  - enabled: 0
+    path: Assets/Scenes/world1/Level4.unity
+    guid: 1d1f5738efbccc0498533d6235937c7f
+  - enabled: 0
+    path: Assets/Scenes/world1/Level3.unity
+    guid: 71784c182f12a0243ae7d73b4f6c5319
+  - enabled: 0
+    path: Assets/Scenes/world1/Level2.unity
+    guid: 97515b5b07ea3ff44983f653b4e0f88c
+  - enabled: 0
+    path: Assets/Scenes/world2/level2-1.unity
+    guid: 4712a07eb1371af4ab12503dee8efcc6
+  - enabled: 0
+    path: Assets/Scenes/world2/level2-2.unity
+    guid: 6ec9fe6619ea8d1498972b01d723f3f1
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/w3_snow/Level3-1.unity
+    guid: 34263dab50c426c46aa142071589add7
+  - enabled: 1
+    path: Assets/Scenes/w3_snow/Level3-2.unity
+    guid: dc0dd2ff0c7dd8145af2ccdb93359ad7
+  - enabled: 0
+    path: Assets/Scenes/w3_snow/Level3-4.unity
+    guid: c84d7e48d1927084b8e12705600b7724
+  - enabled: 0
+    path: Assets/Scenes/w3_snow/Level3-3.unity
+    guid: 429c898544c729048828522588869980
+  - enabled: 0
+    path: Assets/Scenes/w3_snow/Level3-5.unity
+    guid: 723d8d69ce7b44b44ad5e9195dbc1b6d
+  - enabled: 0
+    path: Assets/Scenes/w3_snow/Level3-6.unity
+    guid: 87131dd2ba0d40343894c3ee8903810c
+  - enabled: 0
+    path: Assets/Scenes/w3_snow/Level3-7.unity
+    guid: 20fc83a028e08ab4d9f5ed9e62503336
+  - enabled: 0
+    path: Assets/Scenes/w4_dark/level2.unity
+    guid: 0667b3e37ac3df24796d0e4c728e15d3
   m_configObjects: {}
