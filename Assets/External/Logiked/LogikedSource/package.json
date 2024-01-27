@@ -1,0 +1,19 @@
+{
+    "name": "com.logiked.source",
+    "version": "0.1.0",
+    "displayName": "Logiked Source",
+    "description": "The base features of the Logiked-Assemblies bundle for Unity",
+    "unity": "2020.1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "dependencies": {
+    },
+    "keywords": [
+    ],
+    "author": {
+        "name": "Logiked",
+        "email": "logiked-about@yahoo.com",
+        "url": "https://logiked.itch.io/"
+    }
+}

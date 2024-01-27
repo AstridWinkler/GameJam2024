@@ -1,0 +1,20 @@
+{
+    "name": "com.logiked.tools2d",
+    "version": "0.1.0",
+    "displayName": "Logiked 2D Tools",
+    "description": "2D tools for unity game developpement",
+    "unity": "2020.1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "dependencies": {
+        "com.logiked.source": "0.1.0"
+    },
+    "keywords": [
+    ],
+    "author": {
+        "name": "Logiked",
+        "email": "logiked-about@yahoo.com",
+        "url": "https://logiked.itch.io/"
+    }
+}

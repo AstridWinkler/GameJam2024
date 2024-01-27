@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c07d0e89f32aa42b162b28b2f5054e, type: 3}
+  m_Name: MrKataExport1_-animator
+  m_EditorClassIdentifier: 
+  animations:
+  - uniqueNodeId: 1749261302
+    text: '
+
+      Falling
+
+'
+    editorPosition: {x: 150, y: -400}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: a46693422e5a1e44e929c954f0c9f8d5, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 746445219
+        rules:
+        - comparator: 8800
+          result: 4
+          variableId: 0
+        endRuleInteraction: 0
+  - uniqueNodeId: 746445219
+    text: '
+
+      Idl
+
+'
+    editorPosition: {x: -100, y: -150}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: f87f6af4e5486184193df702f8f7154c, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 1747798328
+        rules:
+        - comparator: 61
+          result: 2
+          variableId: 0
+        endRuleInteraction: 0
+      - nextNodeId: 1547679327
+        rules:
+        - comparator: 61
+          result: 1
+          variableId: 0
+        endRuleInteraction: 0
+      - nextNodeId: 1749261302
+        rules:
+        - comparator: 61
+          result: 4
+          variableId: 0
+        endRuleInteraction: 0
+      - nextNodeId: 2091217301
+        rules:
+        - comparator: 61
+          result: 3
+          variableId: 0
+        endRuleInteraction: 0
+  - uniqueNodeId: 2091217301
+    text: '
+
+      Jumping
+
+'
+    editorPosition: {x: 275, y: -125}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: 153217a339892294186a771a17d6652a, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 746445219
+        rules:
+        - comparator: 8800
+          result: 3
+          variableId: 0
+        endRuleInteraction: 0
+  - uniqueNodeId: 1547679327
+    text: '
+
+      Running
+
+'
+    editorPosition: {x: -100, y: -525}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: 55a734bd2bc6780409e46593851b2e3f, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 746445219
+        rules:
+        - comparator: 8800
+          result: 1
+          variableId: 0
+        endRuleInteraction: 0
+  - uniqueNodeId: 1747798328
+    text: '
+
+      Walling
+
+'
+    editorPosition: {x: -350, y: -300}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: 173fbc3e75031674e82f46313d8684e1, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 746445219
+        rules:
+        - comparator: 8800
+          result: 2
+          variableId: 0
+        endRuleInteraction: 0
+  variables:
+  - name: idl
+    id: 0
+    value: 0
+  animationEntryPointId: 746445219

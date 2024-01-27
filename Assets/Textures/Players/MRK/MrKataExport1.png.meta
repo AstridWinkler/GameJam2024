@@ -1,0 +1,433 @@
+fileFormatVersion: 2
+guid: bc2eb6e192e34134590a16eec89a6897
+labels:
+- tex_MrKataExport1
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 126
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MrKataExport1_007_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8a831bd175be610800000000000000
+      internalID: 1651509473400367336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_006_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7ede339b9f63ba0800000000000000
+      internalID: -6109421270646003761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_005_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.50390625, y: 0.69921875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e039763f08eb16b20800000000000000
+      internalID: 3125989077420577550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_004_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 9
+      pivot: {x: 0.5, y: 0.640625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57449dad651c9600800000000000000
+      internalID: 476279221402224475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_003_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 013d18f9692404ae0800000000000000
+      internalID: -1567179455636319472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_002_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c28b89ac8fec610800000000000000
+      internalID: 1643524463066098827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_001_001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e1e33e3270d2d410800000000000000
+      internalID: 1500490814956233184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_003_002
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bc23a25b1d044630800000000000000
+      internalID: 3910264787466136759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_002_002
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0eab6934b0507ac0800000000000000
+      internalID: -3859496145668821493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_001_002
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479f7f0e7bf83dcb0800000000000000
+      internalID: -4840367154577016460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_003_003
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2edfde8f83e512780800000000000000
+      internalID: -8709576605570302494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_002_003
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7e718337e3e866b0800000000000000
+      internalID: -5302737979087683972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_001_003
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee969b9287b9d3900800000000000000
+      internalID: 665859260319099374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MrKataExport1_001_004
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb6a44655ad916a0800000000000000
+      internalID: -6477906528706073638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MrKataExport1_001_001: 1500490814956233184
+      MrKataExport1_001_002: -4840367154577016460
+      MrKataExport1_001_003: 665859260319099374
+      MrKataExport1_001_004: -6477906528706073638
+      MrKataExport1_002_001: 1643524463066098827
+      MrKataExport1_002_002: -3859496145668821493
+      MrKataExport1_002_003: -5302737979087683972
+      MrKataExport1_003_001: -1567179455636319472
+      MrKataExport1_003_002: 3910264787466136759
+      MrKataExport1_003_003: -8709576605570302494
+      MrKataExport1_004_001: 476279221402224475
+      MrKataExport1_005_001: 3125989077420577550
+      MrKataExport1_006_001: -6109421270646003761
+      MrKataExport1_007_001: 1651509473400367336
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: <logiked>AAEAAAD/////AQAAAAAAAAAMAgAAAEZMb2dpa2VkXzJEVG9vbHMsIFZlcnNpb249MC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1udWxsBQEAAAAubG9naWtlZC5Ub29sMkQuZWRpdG9yLlRleHR1cmVNZXRhZGF0YUV4dGVuc2lvbgsAAAARaW1wb3J0UHJlc3NlZEd1aWQZY3V0X3VzZUNvdW50SW5zdGVhZFBpeGVscxRjdXRfa2VlcEVtcHR5U3ByaXRlcw9jdXRfY29sdW1uQ291bnQKY3V0X1ZhbHVlWApjdXRfVmFsdWVZCmN1dF9waXZvdFgKY3V0X3Bpdm90WQ1hbmltX2ZvbGRlcklkG2FuaW1fY3JlYXRlZFdpdGhUaGlzVGV4dHVyZRttdWx0aURpcmVjdGlvbm5hbExpbmVPZmZzZXQBAAAAAAAAAAEDAAEBCAgICwurAVN5c3RlbS5Db2xsZWN0aW9ucy5HZW5lcmljLkxpc3RgMVtbbG9naWtlZC5Ub29sMkQuZWRpdG9yLlRleHR1cmVNZXRhZGF0YUV4dGVuc2lvbitNZXRhMkRBbmltYXRpb24sIExvZ2lrZWRfMkRUb29scywgVmVyc2lvbj0wLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGxdXQgCAAAABgMAAAAgOGMwYmJiZTY0MmFlN2M1NDI5MWE5YjZlYWVmNDhmOGQBAAEAAAAEAAAACAAAAAAAAD8AAAA/BgQAAAAgNTM1MzVmOWFmZWRjNGU0NDhiYWU1MzllYmMzOTk5OGUJBQAAAAEAAAAEBQAAAKsBU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWMuTGlzdGAxW1tsb2dpa2VkLlRvb2wyRC5lZGl0b3IuVGV4dHVyZU1ldGFkYXRhRXh0ZW5zaW9uK01ldGEyREFuaW1hdGlvbiwgTG9naWtlZF8yRFRvb2xzLCBWZXJzaW9uPTAuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbF1dAwAAAAZfaXRlbXMFX3NpemUIX3ZlcnNpb24EAABAbG9naWtlZC5Ub29sMkQuZWRpdG9yLlRleHR1cmVNZXRhZGF0YUV4dGVuc2lvbitNZXRhMkRBbmltYXRpb25bXQIAAAAICAkGAAAABQAAAAUAAAAHBgAAAAABAAAACAAAAAQ+bG9naWtlZC5Ub29sMkQuZWRpdG9yLlRleHR1cmVNZXRhZGF0YUV4dGVuc2lvbitNZXRhMkRBbmltYXRpb24CAAAACQcAAAAJCAAAAAkJAAAACQoAAAAJCwAAAA0DBQcAAAA+bG9naWtlZC5Ub29sMkQuZWRpdG9yLlRleHR1cmVNZXRhZGF0YUV4dGVuc2lvbitNZXRhMkRBbmltYXRpb24EAAAADUFuaW1hdGlvbkd1aWQMc3ByaXRlU291cmNlDmxpbmVTdGFydEluZGV4CWxpbmVDb3VudAEEAAAlSGFjaGV1ckVkaXRvcitBbmltYXRpb25HZW5lcmF0aW9uTW9kZQIAAAAICAIAAAAGDAAAACA1NWE3MzRiZDJiYzY3ODA0MDllNDY1OTM4NTFiMmUzZgXz////JUhhY2hldXJFZGl0b3IrQW5pbWF0aW9uR2VuZXJhdGlvbk1vZGUBAAAAB3ZhbHVlX18ACAIAAAABAAAAAQAAAAIAAAABCAAAAAcAAAAGDgAAACBmODdmNmFmNGU1NDg2MTg0MTkzZGY3MDJmOGY3MTU0YwHx////8////wEAAAADAAAAAQAAAAEJAAAABwAAAAYQAAAAIDE1MzIxN2EzMzk4OTIyOTQxODZhNzcxYTE3ZDY2NTJhAe/////z////AQAAAAQAAAABAAAAAQoAAAAHAAAABhIAAAAgYTQ2NjkzNDIyZTVhMWU0NGU5MjljOTU0ZjBjOWY4ZDUB7f////P///8BAAAABQAAAAEAAAABCwAAAAcAAAAGFAAAACAxNzNmYmMzZTc1MDMxNjc0ZTgyZjQ2MzEzZDg2ODRlMQHr////8////wEAAAAGAAAAAQAAAAs=</logiked>
+  assetBundleName: 
+  assetBundleVariant: 

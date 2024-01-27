@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4744f05f04d9d084fb9dc85911c990b3, type: 3}
+  m_Name: settings2DTools
+  m_EditorClassIdentifier: 
+  textureMainImportPresset: {fileID: 2655988077585873504, guid: 8da3e2f098d1e4e439b0b029f902df42,
+    type: 2}
+  otherImportPressets: []
+  nodeTransitionDesign: 1
+  defaultSpriteCutSize: 16
+  playAnimationsInSceneView: 1
+  playAnimatorRenderersInSceneView: 1
+  playAnimationsInEditorPreview: 1
+  nodeGridPlacement: 1

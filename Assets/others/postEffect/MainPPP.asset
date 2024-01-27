@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: MainPPP
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: 114806143714317902}
+  - {fileID: 114121193801733448}
+  - {fileID: 114228244674837716}
+  - {fileID: 114312133817739258}
+--- !u!114 &114121193801733448
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5faeb52f5a9340d4e8c2ec245afdfd4a, type: 3}
+  m_Name: StylizedFog
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  fogMode:
+    overrideState: 1
+    value: 2
+  density:
+    overrideState: 1
+    value: 0.0442
+  start:
+    overrideState: 1
+    value: 0
+  end:
+    overrideState: 1
+    value: 0
+  spread:
+    overrideState: 1
+    value: 0.05
+  gradient:
+    overrideState: 1
+    value:
+      serializedVersion: 2
+      key0: {r: 0.30129066, g: 0.7339642, b: 1, a: 0}
+      key1: {r: 0.14297792, g: 0.4183085, b: 0.4811321, a: 1}
+      key2: {r: 0, g: 0.49333334, b: 1, a: 0.89411765}
+      key3: {r: 0, g: 0.79772556, b: 1, a: 0.27450982}
+      key4: {r: 0, g: 0.86985016, b: 1, a: 0.27450982}
+      key5: {r: 0, g: 0.86985016, b: 1, a: 0.2784314}
+      key6: {r: 0, g: 0.7765689, b: 1, a: 0}
+      key7: {r: 0, g: 0.7765689, b: 1, a: 0}
+      ctime0: 0
+      ctime1: 4819
+      ctime2: 10082
+      ctime3: 54192
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 65535
+      atime0: 964
+      atime1: 5012
+      atime2: 10023
+      atime3: 65535
+      atime4: 65535
+      atime5: 65535
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 4
+  gradientTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: 3011cc99c608e5140a67fd3583d6a258, type: 2}
+    defaultState: 1
+  excludeSky:
+    overrideState: 0
+    value: 1
+  useWSDistance:
+    overrideState: 1
+    value: 1
+--- !u!114 &114228244674837716
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1caac67f7e55a0a4cbddd18f995333e0, type: 3}
+  m_Name: HeightFog
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  height:
+    overrideState: 1
+    value: 4.42
+  density:
+    overrideState: 1
+    value: 4.02
+  startDistance:
+    overrideState: 1
+    value: 5
+  fogColor:
+    overrideState: 1
+    value: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 0.25882354}
+  noiseTexture:
+    overrideState: 1
+    value: {fileID: 2800000, guid: b6f5ef030b0a64a409fcdb7b9224e095, type: 3}
+    defaultState: 1
+  noiseTextureScale:
+    overrideState: 1
+    value: 60
+  scrollSpeed:
+    overrideState: 1
+    value: {x: 0.89, y: 0.1}
+--- !u!114 &114312133817739258
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3029bc2b4d0f449409960d6c0930eb6b, type: 3}
+  m_Name: Blur
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  downsample:
+    overrideState: 0
+    value: 1
+  blurSize:
+    overrideState: 0
+    value: 3.77
+  blurIterations:
+    overrideState: 0
+    value: 2
+--- !u!114 &114806143714317902
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 0
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 0
+    value: 0
+  color:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    overrideState: 0
+    value: {x: 0.5, y: 0.5}
+  intensity:
+    overrideState: 1
+    value: 0.417
+  smoothness:
+    overrideState: 0
+    value: 0.2
+  roundness:
+    overrideState: 0
+    value: 1
+  rounded:
+    overrideState: 0
+    value: 0
+  mask:
+    overrideState: 0
+    value: {fileID: 0}
+    defaultState: 1
+  opacity:
+    overrideState: 0
+    value: 1

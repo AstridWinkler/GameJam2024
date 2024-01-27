@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ae6c7b75813e964cb6304774086c513, type: 3}
+  m_Name: DefaultInputs
+  m_EditorClassIdentifier: 
+  keyboardLst:
+  - name: Left
+    key1:
+    - key: 113
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 0
+      axis: Horizontal
+      axisMode: 1
+      invert: 1
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: Q
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Right
+    key1:
+    - key: 100
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 0
+      axis: Horizontal
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: D
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Jump
+    key1:
+    - key: 32
+      axis: 
+      axisMode: 2
+      invert: 0
+    keyXbox:
+    - key: 330
+      axis: 
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: Space
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Run
+    key1:
+    - key: 304
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 332
+      axis: 
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: LeftShift
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Action
+    key1:
+    - key: 101
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 333
+      axis: 
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: E
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Place Spawn point
+    key1:
+    - key: 102
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 335
+      axis: 
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: F
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Remove Spawn point
+    key1:
+    - key: 103
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 336
+      axis: 
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: F
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+  - name: Suicide
+    key1:
+    - key: 97
+      axis: 
+      axisMode: 0
+      invert: 0
+    keyXbox:
+    - key: 334
+      axis: 
+      axisMode: 0
+      invert: 0
+    img:
+    - sprite: {fileID: 0}
+      printText: 1
+      text: A
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 
+    - sprite: {fileID: 0}
+      printText: 0
+      text: 

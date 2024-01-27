@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7ffd54f9d44ec40a24a266f69a8442, type: 3}
+  m_Name: MrKataExport1_running
+  m_EditorClassIdentifier: 
+  duration: 0.6
+  loopMode: 0
+  sprites:
+  - {fileID: 1500490814956233184, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}
+  - {fileID: -4840367154577016460, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}
+  - {fileID: 665859260319099374, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}
+  - {fileID: -6477906528706073638, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}
+  - {fileID: 1643524463066098827, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}
+  - {fileID: -3859496145668821493, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}
+  - {fileID: -5302737979087683972, guid: bc2eb6e192e34134590a16eec89a6897, type: 3}

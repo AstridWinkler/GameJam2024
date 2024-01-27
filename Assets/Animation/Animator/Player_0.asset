@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729d339573d79574db1a9083f75eda6d, type: 3}
+  m_Name: Player_0
+  m_EditorClassIdentifier: 
+  genId: 0
+  listId: 0
+  ListLayers:
+  - name: Default
+    defaultAnimId: 0
+    ListAnims:
+    - coefSpeed: 1
+      visualPos: {x: 452.825, y: 134.65}
+      animation: {fileID: 11400000, guid: 73caa149e02c4a54eaf20b3d56017d09, type: 2}
+      listId: 0
+      looping: 1
+      transitions:
+      - animId: 0
+        toAnimId: 3
+        endAction: 2
+        conditions:
+        - type: 0
+          var1: 0
+          value: 2
+      - animId: 0
+        toAnimId: 4
+        endAction: 2
+        conditions:
+        - type: 0
+          var1: 0
+          value: 1
+      - animId: 0
+        toAnimId: 5
+        endAction: 2
+        conditions:
+        - type: 0
+          var1: 0
+          value: 3
+      - animId: 0
+        toAnimId: 7
+        endAction: 2
+        conditions:
+        - type: 0
+          var1: 0
+          value: 4
+    - coefSpeed: 1
+      visualPos: {x: 628.825, y: 306.65}
+      animation: {fileID: 11400000, guid: 29c2ed3390085d1489292ae45afd15f6, type: 2}
+      listId: 1
+      looping: 1
+      transitions:
+      - animId: 1
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 2
+    - coefSpeed: 1
+      visualPos: {x: 368.825, y: 281.65}
+      animation: {fileID: 11400000, guid: 6674b8ca7c94fca4da542ca392ec965a, type: 2}
+      listId: 2
+      looping: 1
+      transitions:
+      - animId: 2
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 1
+    - coefSpeed: 1
+      visualPos: {x: 631.825, y: 176.65}
+      animation: {fileID: 11400000, guid: e5a42be33f3566a40b76a38e0f81b1a1, type: 2}
+      listId: 3
+      looping: 1
+      transitions:
+      - animId: 3
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 2
+      - animId: 3
+        toAnimId: 1
+        endAction: 1
+        conditions: []
+    - coefSpeed: 1
+      visualPos: {x: 252.82501, y: 212.65}
+      animation: {fileID: 11400000, guid: 999ea2afea6675d468dfb9c6e321e363, type: 2}
+      listId: 4
+      looping: 1
+      transitions:
+      - animId: 4
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 1
+      - animId: 4
+        toAnimId: 2
+        endAction: 1
+        conditions: []
+    - coefSpeed: 1
+      visualPos: {x: 465.22504, y: -49.55002}
+      animation: {fileID: 11400000, guid: 88cacc1959f100743b8c2030370f166e, type: 2}
+      listId: 5
+      looping: 1
+      transitions:
+      - animId: 5
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 3
+    - coefSpeed: 0.5
+      visualPos: {x: 158.82501, y: 101.649994}
+      animation: {fileID: 11400000, guid: 6674b8ca7c94fca4da542ca392ec965a, type: 2}
+      listId: 6
+      looping: 1
+      transitions:
+      - animId: 6
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 4
+    - coefSpeed: 0.5
+      visualPos: {x: 216.82501, y: 7.6499863}
+      animation: {fileID: 11400000, guid: 999ea2afea6675d468dfb9c6e321e363, type: 2}
+      listId: 7
+      looping: 1
+      transitions:
+      - animId: 7
+        toAnimId: 6
+        endAction: 1
+        conditions: []
+      - animId: 7
+        toAnimId: 0
+        endAction: 2
+        conditions:
+        - type: 3
+          var1: 0
+          value: 4
+  vars:
+  - val: 0
+    name: idl

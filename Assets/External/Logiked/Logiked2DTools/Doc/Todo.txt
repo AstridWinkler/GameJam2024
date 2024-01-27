@@ -1,0 +1,12 @@
+Hacheur
+
+
+Déplacement/création de sprites
+Outil pour modif l'odre des frames dans les anims (avec alt click dans l'ordre et des petits panneaux numérotés sur les frames par exemple)
+
+
+Systeme d'entités liées a des etats d'animations
+Animators
+AnimationRenderer
+Peronnages
+
