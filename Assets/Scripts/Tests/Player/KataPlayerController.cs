@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,6 +73,31 @@ public class KataPlayerController : PlayerMovementHandler
             effectErrorParticles.Inst(transform.position);
 
     }
+
+
+    int shimmerDepth = 0;
+
+    internal void MoveUpShimmer()
+    {
+        if (shimmerDepth > 0)
+        {
+            transform.position -= Vector3.up * ShimmerLevelBlock.depthOffsetY;
+            shimmerDepth--;
+        }
+
+     // ShimmerLevelBlock.depthOffsetY
+    }
+
+    internal void MoveDownShimmer()
+    {
+        if (shimmerDepth < 3)//que max
+        {
+            shimmerDepth++;
+            transform.position += Vector3.up * ShimmerLevelBlock.depthOffsetY;
+        }
+    }
+
+
 
 
     public void OnDie()

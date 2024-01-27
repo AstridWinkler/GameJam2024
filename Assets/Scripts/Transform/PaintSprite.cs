@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -10,7 +11,8 @@ public class PaintSprite : MonoBehaviour
 {
 
 
-    Tilemap[] tileMap;
+    //Tilemap[] tileMaps;
+    Tilemap tileMap;
     SpriteRenderer rd;
 
     Rect realPaintRect;
@@ -82,7 +84,16 @@ public class PaintSprite : MonoBehaviour
         maskList = new List<GameObject>();
         pixelPaintTasks = new Stack<IEnumerator>();
         //tileMap = GameObject.FindObjectsOfType<Tilemap>();
-        tileMap = new Tilemap[] { GameManager.Gameplay.MainPaintMap };
+        
+        tileMap =  GameManager.Gameplay.MainPaintMaps.FirstOrDefault(m => m.cellBounds.Contains(m.WorldToCell(transform.position)));
+
+        /*
+         * Gamejam skip speedrun
+        tileMap =  GameManager.Gameplay.MainPaintMaps.FirstOrDefault(m => m.localBounds.Contains(transform.position));        
+        Debug.Log(GameManager.Gameplay.MainPaintMaps.Length);
+        Debug.Log(GameManager.Gameplay.MainPaintMaps.FirstOrDefault()?.localBounds);
+        Debug.Log(tileMap);*/
+
         rd = GetComponent<SpriteRenderer>();
         finishedTilesAction = new List<Action>();
         isDrawing = false;
@@ -190,7 +201,7 @@ public class PaintSprite : MonoBehaviour
 
     public void CollectSprites()
     {
-
+        if (tileMap == null) return;
 
 
 
@@ -226,18 +237,20 @@ public class PaintSprite : MonoBehaviour
 
 
 
-                for (z = 0; z < tileMap.Length; z++)
+              //  for (z = 0; z < tileMaps.Length; z++)
                 {
-                    if (tileMap[z] == null)
-                        continue;
-                    sp = tileMap[z].GetSprite(currentPos);
+                    
+
+
+
+                    sp = tileMap.GetSprite(currentPos);
 
                     if (sp != null && sp.texture != null)
                     {
-                        DrawOnTileMapCoroutine(currentPos, tileMap[z], r = new Rect((Vector3)currentPos, tileMap[z].cellSize));
+                        DrawOnTileMapCoroutine(currentPos, tileMap, r = new Rect((Vector3)currentPos, tileMap.cellSize));
 
                         if (useSpriteMaskPainting)
-                            PaintMask_TileMap(currentPos, tileMap[z], r);
+                            PaintMask_TileMap(currentPos, tileMap, r);
                     }
                     //      tileTaskInfo.Add(new Tuple<Vector3Int, Tilemap, Rect>(currentPos, tileMap[z], new Rect((Vector3)currentPos, tileMap[z].cellSize) ));
                 }

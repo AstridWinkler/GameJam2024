@@ -29,8 +29,8 @@ public class GameplayManager : BasicManager
 	Transform camTargetPoint;
 
     [SerializeField]
-    Tilemap mainPaintMap;
-    public Tilemap MainPaintMap { get { return mainPaintMap; } }
+    Tilemap[] mainPaintMaps;
+    public Tilemap[] MainPaintMaps { get { return mainPaintMaps; } }
 
 
     public LevelBlock LevelContent { get { return levelContent; } }
@@ -138,7 +138,11 @@ public class GameplayManager : BasicManager
 
         defaultSpawnPoint = levelContent.SpawnPoint;
         GameManager.CamController.SetCamera(levelContent.MainCamera.transform.parent);
-        mainPaintMap = levelContent.MainPaintMap;
+        mainPaintMaps = levelContent.MainPaintMaps;
+
+        foreach(var e in mainPaintMaps)
+            e.CompressBounds();
+
         isPlaying = true;
 
 

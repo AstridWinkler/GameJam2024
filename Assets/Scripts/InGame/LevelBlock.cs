@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using static GameWorldFile;
 
+
+[RequireComponent(typeof(ShimmerLevelBlock))]
 [ExecuteAlways]
 public class LevelBlock : MonoBehaviour
 {
@@ -14,6 +17,9 @@ public class LevelBlock : MonoBehaviour
   
     [BitMaskAttribute(typeof(LevelMods)), SerializeField]
     private LevelMods LevelAppliedMods;
+
+    private ShimmerLevelBlock shimmerWorldModifier;
+
 
     public GameWorldFile LinkedWorld
     {
@@ -34,9 +40,13 @@ public class LevelBlock : MonoBehaviour
 
     public Camera MainCamera {get{return mainCamera; }}
 
-    public Tilemap MainPaintMap { get { return mainPaintMap; } }
+
+    /// <summary>
+    /// Utiliser le tag "PaintMap" pour les tilemaps concernés
+    /// </summary>
+    public Tilemap[] MainPaintMaps { get { return mainPaintMaps; } }
     [SerializeField]
-    Tilemap mainPaintMap;
+    Tilemap[] mainPaintMaps;
 
 
         [SerializeField]
@@ -47,10 +57,11 @@ public class LevelBlock : MonoBehaviour
     {
         instance = this;
         mainCamera = GetComponentInChildren<Camera>();
+        shimmerWorldModifier = GetComponent<ShimmerLevelBlock>();
 
 #if UNITY_EDITOR
         spawnPoint = GameObject.FindGameObjectWithTag("SpawnPoint");
-        mainPaintMap = GameObject.FindObjectOfType<TilemapCollider2D>().GetComponent<Tilemap>() ;
+        mainPaintMaps = GameObject.FindObjectsOfType<TilemapCollider2D>().Where(m => m.tag == "PaintMap").Select(x => x.gameObject.GetComponent<Tilemap>()).ToArray();
         if (spawnPoint == null)
             Debug.LogError("Spawn point not found !" );
 

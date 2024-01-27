@@ -31,8 +31,8 @@ public class KataInputHandler : MonoBehaviour
 
         
 
-        if (inputs.GetKey("Suicide", keyMode.DownPress))        
-            playerMovementHandler.InputKill();
+     //   if (inputs.GetKey("Suicide", keyMode.DownPress))        
+      //      playerMovementHandler.InputKill();
 
 
         //  playerMovementHandler.InputRun(inputs.GetKey("Run", keyMode.Press));
@@ -40,13 +40,18 @@ public class KataInputHandler : MonoBehaviour
         if (inputs.GetKey("Action", keyMode.DownPress))
             playerMovementHandler.InputAction();
 
-        if (inputs.GetKey("Place Spawn point", keyMode.DownPress))
-            playerMovementHandler.PlaceSpawnPoint();
+       // if (inputs.GetKey("Place Spawn point", keyMode.DownPress))
+         //   playerMovementHandler.PlaceSpawnPoint();
        
-        if (inputs.GetKey("Remove Spawn point", keyMode.DownPress))
-            playerMovementHandler.RemoveSpawnPoint();
+        //if (inputs.GetKey("Remove Spawn point", keyMode.DownPress))
+        //    playerMovementHandler.RemoveSpawnPoint();
 
 
+        if (Input.GetKeyDown(KeyCode.S))
+            playerMovementHandler.MoveDownShimmer();
+
+        if (Input.GetKeyDown(KeyCode.Z))
+            playerMovementHandler.MoveUpShimmer();
 
 
         /*
