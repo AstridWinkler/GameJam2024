@@ -267,11 +267,14 @@ public class GameplayManager : BasicManager
             
             var lev = levelContent;
 
+            currentPlayer = GameObject.Instantiate(playerPref, respawnPos, new Quaternion(), GameManager.TempInstances);
+
+            /*
             new Tra_LoopPack(() =>
             {
                 if (lev != levelContent) return;
                 currentPlayer = GameObject.Instantiate(playerPref, respawnPos, new Quaternion(), GameManager.TempInstances);
-            }, 0.05f, GameStateController.Wait_MobClassic);
+            }, 0.05f, GameStateController.Wait_MobClassic);*/
         }
 
 
