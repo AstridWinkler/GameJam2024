@@ -14,8 +14,6 @@ namespace logiked.source.attributes
     public class LayerAttribute : FutureFieldAttribute
     {
 
-
-
 #if UNITY_EDITOR
 
         protected override void OnGUIRecursive(Rect position, UnityEditor.SerializedProperty property, GUIContent label, AttributeContext Context)

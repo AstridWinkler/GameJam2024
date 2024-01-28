@@ -1,5 +1,6 @@
 ﻿
 using logiked.source.extentions;
+using logiked.source.types;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -63,7 +64,11 @@ public class GameplayManager : BasicManager
 	Transform defaultSpawnPoint;
 
     [SerializeField]
+    GameObject dieScreenPopup;
+
+    [SerializeField]
     Stack<Transform> spawnPointInstances = new Stack<Transform>();
+    public int currentDepth => spawnPointInstances.Count;
 
     [SerializeField]
  Transform currentSpawnPoint => spawnPointInstances.Count == 0 ? defaultSpawnPoint : spawnPointInstances.Peek();
@@ -72,7 +77,19 @@ public class GameplayManager : BasicManager
     public Vector3 DefaultSpawnPointPosition { get => defaultSpawnPoint.position; }
 
     public enum DieEnum {Explosion = 0, SimpleCorpse = 1 , Desintegration=2}
-   public enum DieKiller {None = 0, Spikes = 1 }
+
+    public void DieAndReloadMap()
+    {
+        GameManager.Gameplay.TravelShimerImagePopup();
+
+
+       
+        new GameTimer(0.05f, () => dieScreenPopup.SetActive(true));
+        new GameTimer(1.0f, () =>  ReloadLevel());
+
+    }
+
+    public enum DieKiller {None = 0, Spikes = 1 }
 
     [SerializeField]
     GameObject[] diePref;
@@ -137,9 +154,14 @@ public class GameplayManager : BasicManager
 
 
 
+    private void ReloadLevel()
+    {
+        LoadLevel(SceneManager.GetActiveScene().name);
+
+    }
 
 
-    private void LoadLevel(string name)
+        private void LoadLevel(string name)
     {
         UnloadCurrentLevel();
 
@@ -451,8 +473,14 @@ public class GameplayManager : BasicManager
 
     public void KillPlayer(DieEnum dieMode, DieKiller killer = DieKiller.None, Vector2 respawnPos = default(Vector2) )
 	{
+        bool respawn = currentDepth > 0;
 
-   //     Debug.Log("player killed");
+        if (!respawn)
+            GameManager.Gameplay.DieAndReloadMap();
+
+
+
+        //     Debug.Log("player killed");
         if (currentPlayer != null && !trySpawn)
         {
             currentPlayerCtr.OnDie();
@@ -505,8 +533,8 @@ public class GameplayManager : BasicManager
                 Destroy(currentPlayer);
             }
 
-
-			InstPlayer(false, respawnPos);
+            if(respawn)
+			    InstPlayer(false, respawnPos);
 		}
 	}
 

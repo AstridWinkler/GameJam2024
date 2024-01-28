@@ -57,8 +57,17 @@ public class KataInputHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             playerMovementHandler.InputKill();
-            playerMovementHandler.RemoveSpawnPoint();
-            playerMovementHandler.MoveUpShimmer();
+
+            if (GameManager.Gameplay.currentDepth > 0)
+            {
+                playerMovementHandler.InputKill();
+          playerMovementHandler.RemoveSpawnPoint();
+                playerMovementHandler.MoveUpShimmer();
+            }
+            else
+            {
+      
+            }
 
         }
 

@@ -1,0 +1,21 @@
+{
+    "name": "com.logiked.language",
+    "version": "0.1.0",
+    "displayName": "Logiked Language System",
+    "description": "Tools to allow multilangual patches for strings in your games !",
+    "unity": "2020.1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "repo": "https://github.com/Logiked/LogikedLanguage.git",
+    "dependencies": {
+        "com.logiked.source": "https://github.com/Logiked/LogikedSource.git"
+    },
+    "keywords": [
+    ],
+    "author": {
+        "name": "Logiked",
+        "email": "logiked-about@yahoo.com",
+        "url": "https://logiked.itch.io/"
+    }
+}

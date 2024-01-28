@@ -83,8 +83,17 @@ namespace logiked.source.graphNode
             // var obj = (GraphicNode<T>)this.SerializeToByteArray().DeserializeToObject();
 
             obj.uniqueNodeId = newNodeId;
+
+            OnBeingCloned();
+
             return obj;
         }
+
+        /// <summary>
+        /// Fonction appelée lorseque le node est cloné. Permet de modifier les champs de votre coté afin de gerer les dépendances.
+        /// </summary>
+        public virtual void OnBeingCloned() { }
+
 
 
         [NonSerialized]

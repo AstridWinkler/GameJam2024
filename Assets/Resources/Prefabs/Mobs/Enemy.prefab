@@ -323,7 +323,7 @@ MonoBehaviour:
   tail2: {fileID: 5736747300649570987}
   MoveSpeed: 4
   MaxDist: 10
-  MinDist: 1
+  MinDist: 0
 --- !u!1 &5736747300649570988
 GameObject:
   m_ObjectHideFlags: 0

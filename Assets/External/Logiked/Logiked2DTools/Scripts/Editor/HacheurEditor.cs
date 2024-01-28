@@ -42,7 +42,7 @@ public partial class HacheurEditor : Logiked_EditorWindow
     {
         if (!CreateHacheurValidation())
         {
-            LogikedWindowsAlert.Message_Box("You must select a Texture 2D in the project before using Hacheur Window.", "Cannot open Hacheur", LogikedWindowsAlert.WindowsAlertType.OK);
+            EditorUtility.DisplayDialog("Cannot open Hacheur", "You must select a Texture 2D in the project before using Hacheur Window.", "Ok");
             return;
         }
         CreateHacheur();
@@ -608,6 +608,8 @@ public partial class HacheurEditor : Logiked_EditorWindow
         SpriteMetaData[] datas = metas.Select(m => m.datas).ToArray(); ;
 
 
+        //textureImport.spritesheet = new SpriteMetaData[0];
+       // textureImport.SaveAndReimport();
 
         textureImport.spritesheet = datas;
         EditorUtility.SetDirty(textureImport);

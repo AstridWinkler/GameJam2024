@@ -421,6 +421,8 @@ namespace logiked.source.graphNode
         public virtual void DirtyNodeUpdate()
         {
 
+            if (currentFile == null) return;
+
             int i, j, p;
 
             if (nodeDict != null)
@@ -532,7 +534,7 @@ namespace logiked.source.graphNode
 
             menu.AddSeparator("");
 
-            FillContextEditMenu(menu, CurrentScreenCenterPosition, "Edit");
+            FillContextEditMenu(menu, CurrentScreenCenterPosition, "Edit/");
 
             menu.AddSeparator("");
             menu.AddItem(new GUIContent("Undo %Z"), false, Undo.PerformUndo);
@@ -549,10 +551,12 @@ namespace logiked.source.graphNode
         /// </summary>
         public void ResetView()
         {
+            ViewOffset = Vector2.zero;
+
+            if (currentFile == null) return;
+
             var nods = currentFile.GetNodes();
             if (nods.Count == 0)
-                ViewOffset = Vector2.zero;
-            else
                 ViewOffset = -new Vector2(nods.Average(m => m.EditorPosition.x), nods.Average(m => m.EditorPosition.y));
 
             zoomCoef = 1;
@@ -809,7 +813,7 @@ namespace logiked.source.graphNode
 
         protected virtual void OnFileOpen() { }
 
-        private void SaveCurrentFile()
+        protected void SaveCurrentFile()
         {
             //  Debug.Log("Save File");
             EditorUtility.SetDirty(currentFile);
@@ -969,13 +973,13 @@ namespace logiked.source.graphNode
                 RefreshCachedEditor();
 #endif
 
-                FontScaleUpdate();
 
                 if (!checkReload)
                 {
                     checkReload = true;
                     OnStart_();
                 }
+                FontScaleUpdate();
 
 
                 ComputeInputs();
@@ -991,9 +995,9 @@ namespace logiked.source.graphNode
                 case EditMode.NoFile:
 
                     BeginWindows();
-                    GUI.Window(48, new Rect(position.size.x / 2f - 100, position.size.y / 2f - 37, 200, 75), (i) =>
+                    GUI.Window(48, new Rect(position.size.x / 2f - 100, position.size.y / 2f - 37, 200, 100), (i) =>
                     {
-                        EditorGUILayout.HelpBox("No file selected. Please select a file in the project window to edit it.", MessageType.Error);
+                        EditorGUILayout.HelpBox($"No file selected. Please select a '{typeof(S).Name}' file in the project window to edit it.", MessageType.Error);
                     }, "No file");
 
                     OnGUiNoFileWindows();

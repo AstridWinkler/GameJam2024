@@ -675,6 +675,8 @@ namespace logiked.source.editor
                 NodeConnectBubble5,
                 NodeConnectBubble6,
                 NodeConnectBubble7,
+                Help_Documentation_White,
+
             };
 
 
@@ -749,6 +751,10 @@ namespace logiked.source.editor
                     case EditorIconType.NodeConnectBubble5: val = "sv_icon_dot5_pix16_gizmo"; break;
                     case EditorIconType.NodeConnectBubble6: val = "sv_icon_dot6_pix16_gizmo"; break;
                     case EditorIconType.NodeConnectBubble7: val = "sv_icon_dot7_pix16_gizmo"; break;
+
+                    case EditorIconType.Help_Documentation_White: val = "d__Help@2x"; break;
+                        
+
                 }
 
                 if (!IconDictionary.ContainsKey(icon))
@@ -851,7 +857,7 @@ namespace logiked.source.editor
             }
 
 
-            private static Action NullAct = () => { };
+            private static readonly Action NullAct = () => { };
 
             public static void GUIDrawEditorIcon(EditorIconType type, Rect rect, string tooltip = "")
             {

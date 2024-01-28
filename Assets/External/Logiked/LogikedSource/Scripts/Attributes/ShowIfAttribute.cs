@@ -291,10 +291,21 @@ namespace logiked.source.attributes
             {
                 if (exceptedResult == null)
                 {
+                    bool nullity = currentValue == null;
+
+                    if (!nullity && currentValue.IsTypeOf<UnityEngine.Object>())
+                    {
+                    #if UNITY_EDITOR
+                        nullity = (currentValue as UnityEngine.Object).GetGUID().IsNullOrEmpty();
+                    #endif
+                    }
+
+
+
                     switch (operation)
                     {
-                        case ShowIfOperations.Equal: return currentValue == null;
-                        case ShowIfOperations.NotEqual: return currentValue != null;
+                        case ShowIfOperations.Equal: return nullity;
+                        case ShowIfOperations.NotEqual: return !nullity;
                         default: return false;
                     }
                 }

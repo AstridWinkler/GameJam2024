@@ -5,9 +5,6 @@
     "m_Properties": [
         {
             "m_Id": "912978a1ff85427f9800906d3fba1463"
-        },
-        {
-            "m_Id": "47ceb4072d5045c599e6de15122f7e73"
         }
     ],
     "m_Keywords": [],
@@ -579,35 +576,6 @@
     "m_ShaderOutputName": "Sampler",
     "m_StageCapability": 3,
     "m_BareResource": false
-}
-
-{
-    "m_SGVersion": 3,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
-    "m_ObjectId": "47ceb4072d5045c599e6de15122f7e73",
-    "m_Guid": {
-        "m_GuidSerialized": "b133bd7b-e7d5-483b-9b60-82d5897a24e4"
-    },
-    "m_Name": "Tint",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Tint",
-    "m_DefaultReferenceName": "_Tint",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "r": 1.0,
-        "g": 1.0,
-        "b": 1.0,
-        "a": 1.0
-    },
-    "isMainColor": false,
-    "m_ColorMode": 0
 }
 
 {
@@ -1499,9 +1467,6 @@
     "m_ChildObjectList": [
         {
             "m_Id": "912978a1ff85427f9800906d3fba1463"
-        },
-        {
-            "m_Id": "47ceb4072d5045c599e6de15122f7e73"
         }
     ]
 }

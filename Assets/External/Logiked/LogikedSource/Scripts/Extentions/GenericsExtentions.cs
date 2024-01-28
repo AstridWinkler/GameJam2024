@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -300,9 +301,19 @@ namespace logiked.source.extentions
         /// <param name="dic">Ce dicitonnaire</param>
         /// <param name="key">La clé à chercher</param>
         /// <param name="elem">La valeur à ajouter / Mettre à jour</param>
-        public static void AddOrUpdate<T, G>(this Dictionary<T, G> dic, T key, G elem)
+        public static void AddOrUpdate<T, G>(this IDictionary<T, G> dic, T key, G elem)
         {
             if (dic.ContainsKey(key)) dic[key] = elem;
+            else dic.Add(key, elem);
+        }
+
+        /// <inheritdoc cref="AddOrUpdate{T, G}(IDictionary{T, G}, T, G)"/>
+        /// <param name="dic">Ce dicitonnaire</param>
+        /// <param name="key">La clé à chercher</param>
+        /// <param name="elem">La valeur à ajouter / Mettre à jour</param>
+        public static void AddOrUpdate(this IDictionary dic, object key, object elem)
+        {
+            if (dic.Contains(key)) dic[key] = elem;
             else dic.Add(key, elem);
         }
 
@@ -318,7 +329,7 @@ namespace logiked.source.extentions
         /// <returns>la valeur ou la valeur par défaut de G (peut etre null)</returns>
         public static G GetOrDefault<T, G>(this IDictionary<T, G> dic, T key)
         {
-            if (dic.ContainsKey(key)) return dic[key];
+            if (dic?.ContainsKey(key) == true) return dic[key];
             return default;
         }
 

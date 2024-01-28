@@ -23,8 +23,8 @@ public class EnemyTrajectory : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(GameManager.Gameplay.CurrentPlayer != null)
-        objectToFollow = GameManager.Gameplay.CurrentPlayer.transform;
+        if (GameManager.Gameplay.CurrentPlayer != null)
+            objectToFollow = GameManager.Gameplay.CurrentPlayer.transform;
     }
 
     private void directionDisplacement(Vector3 fromObject, Vector3 toObject)
@@ -55,6 +55,7 @@ public class EnemyTrajectory : MonoBehaviour
         if (objectToFollow == null)
         {
             Start();
+            directionDisplacement(transform.position, transform.position);
             return;
         }
 

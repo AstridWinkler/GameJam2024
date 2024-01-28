@@ -1,0 +1,12 @@
+msgid ""
+msgstr ""
+"Language: fr-FR\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Author: CoupleLibre\n"
+"Description: Patch francais officiel\n"
+"Version: 1.0\n"
+
+msgctxt "ui.died"
+msgid "Vous etes mort"
+msgstr "Vous etes mort"
