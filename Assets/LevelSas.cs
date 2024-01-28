@@ -1,7 +1,9 @@
+using logiked.source.extentions;
 using logiked.source.types;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelSas : MonoBehaviour
 {
@@ -10,7 +12,8 @@ public class LevelSas : MonoBehaviour
 
     [SerializeField]
     Logic_SimpleDoor door2;
-
+    [SerializeField]
+    string nextLevelName;
 
     [SerializeField]
     GameObject world1CameraPath;
@@ -40,8 +43,15 @@ public class LevelSas : MonoBehaviour
 
     void OpenSecondLevel()
     {
+        if(door2 != null)
         door2.SetState(true);
+
+        if(world2CameraPath != null)
         world2CameraPath.gameObject.SetActive(true);
+
+        if (!nextLevelName.IsNullOrEmpty())
+            SceneManager.LoadScene(nextLevelName);
+
     }
 
     private void Awake()

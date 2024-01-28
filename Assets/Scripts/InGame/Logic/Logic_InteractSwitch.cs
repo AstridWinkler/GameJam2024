@@ -58,5 +58,13 @@ class Logic_InteractSwitch : LogicBlock_Base, I_Interactable
         return true;
     }
 
+
+    public void Update()
+    {
+      //  if(Vector2.Distance( GameManager.Gameplay.TheoricalPlayerPos, transform.position) < 4 && Input.GetKeyDown(KeyCode.E))
+      //      switc
+
+    }
+
 }
 

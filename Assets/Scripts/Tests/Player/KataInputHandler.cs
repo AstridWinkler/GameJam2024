@@ -1,4 +1,6 @@
-﻿using logiked.source.types;
+﻿using FunkyCode;
+using logiked.source.extentions;
+using logiked.source.types;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +17,8 @@ public class KataInputHandler : MonoBehaviour
         playerMovementHandler = GetComponent<KataPlayerController>();
         inputs = GameManager.Inputs.GetController();
     }
+
+    GameTimer shimmerCooldown;
 
     private void Update()
     {
@@ -48,25 +52,36 @@ public class KataInputHandler : MonoBehaviour
         //    playerMovementHandler.RemoveSpawnPoint();
 
 
-        if (Input.GetKeyDown(KeyCode.S))
+
+
+        if (Input.GetKeyDown(KeyCode.S) && shimmerCooldown.IsNullOrInactive())
         {
             GameManager.Gameplay.TravelShimerImagePopup();
+            shimmerCooldown = new GameTimer(0.5f);
 
             new GameTimer(0.01f, () =>
             {
                 playerMovementHandler.PlaceSpawnPoint();
                 playerMovementHandler.MoveDownShimmer();
+                // LightingManager2D.Instance.UpdateInternal();
+
+                LightingManager2D.Instance.Reinit();
+
+
                 ShimmerLevelBlock.Instance.SetShimmerDepth(GameManager.Gameplay.currentDepth);
             });
 
         }
 
-        if (Input.GetKeyDown(KeyCode.Z))
+        if (Input.GetKeyDown(KeyCode.Z) && shimmerCooldown.IsNullOrInactive())
         {
+            shimmerCooldown = new GameTimer(0.5f);
             playerMovementHandler.InputKill();
 
             if (GameManager.Gameplay.currentDepth > 0)
             {
+                LightingManager2D.Instance.Reinit();
+
                 playerMovementHandler.InputKill();
             playerMovementHandler.RemoveSpawnPoint();
                 playerMovementHandler.MoveUpShimmer();

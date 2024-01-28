@@ -36,6 +36,11 @@ public class ShimmerDepthFloor : MonoBehaviour
     }
 
 
+    internal void SetDepthActive(bool v)
+    {
+        if (objectsToEnable != null)
+            objectsToEnable.gameObject.SetActive(v);
+    }
 #if UNITY_EDITOR
 
     public void UpdateTilemapClone()
@@ -72,11 +77,6 @@ public class ShimmerDepthFloor : MonoBehaviour
         }
     }
 
-    internal void SetDepthActive(bool v)
-    {
-        if (objectsToEnable != null)
-            objectsToEnable.gameObject.SetActive(v);
-    }
 
 #endif
 

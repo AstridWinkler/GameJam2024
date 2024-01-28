@@ -40,6 +40,7 @@ public class KataPlayerController : PlayerMovementHandler
     protected override void Update()
     {
         base.Update();
+        UpdateAction();
         LastframeVelocity = rb.velocity;
         SetNearItem();
     }
@@ -170,6 +171,30 @@ public class KataPlayerController : PlayerMovementHandler
             shimmerDepth++;
             transform.position += Vector3.up * ShimmerLevelBlock.depthOffsetY;
         }
+    }
+
+
+
+
+
+    protected void UpdateAction()
+    {
+
+        if (!Input.GetKeyDown( KeyCode.E))
+            return;
+
+
+        var lst = Physics2D.OverlapCircleAll(transform.position, 5f).Select(m => m.GetComponent<I_Interactable>()).NotNull().Where(m => m.CanPlayerAction()).OrderBy(m => Vector2.Distance(transform.position, (m as MonoBehaviour).transform.position)).FirstOrDefault();
+
+
+
+        if (lst != null )
+        {
+            //	Debug.LogError("wouah");
+            lst.CallPlayerAction(null);
+        }
+
+
     }
 
 

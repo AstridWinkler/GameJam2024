@@ -7,6 +7,7 @@ namespace FunkyCode
 	public class LightingManager2D : LightingMonoBehaviour
 	{
 		private static LightingManager2D instance;
+		public static LightingManager2D Instance => instance;
 
 		[SerializeField]
 		public LightingCameras cameras = new LightingCameras();
@@ -71,6 +72,7 @@ namespace FunkyCode
 			{
 				cameras = new LightingCameras();
 			}
+
 
 			if (Application.isPlaying)
 			{
@@ -263,6 +265,20 @@ namespace FunkyCode
 			{
 				profile = setProfile;
 			}
+		}
+
+
+		public void Reinit()
+        {
+			foreach (Transform t in transform)
+			{
+				DestroyImmediate(t.gameObject);
+			}
+
+			Light2D.ForceUpdateAll();
+
+			LightingManager2D.ForceUpdate();
+
 		}
 
 		private void OnEnable()

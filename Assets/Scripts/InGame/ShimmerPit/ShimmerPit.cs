@@ -32,14 +32,22 @@ public class ShimmerPit : MonoBehaviour
         
     }
 
+    public void SetDepthActive(int depth)
+    {
 
+        for (int i = 0; i < numberOfDepth; i++)
+        {
+            shimmerDepthList[i].SetDepthActive(i == depth);
+        }
+
+    }
 
 #if UNITY_EDITOR
 
 
 
 
-  public  void UpdateShimmerDepth()
+    public  void UpdateShimmerDepth()
     {
 
 
@@ -82,15 +90,7 @@ public class ShimmerPit : MonoBehaviour
 
     }
 
-    internal void SetDepthActive(int depth)
-    {
 
-        for (int i = 0; i < numberOfDepth; i++)
-        {
-            shimmerDepthList[i].SetDepthActive(i == depth);
-        }
-
-    }
 
     ShimmerDepthFloor CreateNewDepth()
     {

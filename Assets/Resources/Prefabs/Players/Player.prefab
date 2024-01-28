@@ -39,6 +39,7 @@ Transform:
   - {fileID: 543450653437244354}
   - {fileID: 1869785182}
   - {fileID: 8956411213213662977}
+  - {fileID: 1454626283779909226}
   m_Father: {fileID: 777259114524715056}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4906,9 +4907,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1136626539
+  m_SortingLayer: 4
+  m_SortingOrder: -30
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -5329,7 +5330,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3910264787466136759, guid: bc2eb6e192e34134590a16eec89a6897,
+  m_Sprite: {fileID: -8709576605570302494, guid: bc2eb6e192e34134590a16eec89a6897,
     type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 1
@@ -5644,6 +5645,100 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1454626283779909231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454626283779909226}
+  - component: {fileID: 1454626283779909224}
+  m_Layer: 0
+  m_Name: LightPlafond1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1454626283779909226
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454626283779909231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16, y: 1.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 241005629}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1454626283779909224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454626283779909231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85a34663ca705a54eac3205e225a6d45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightType: 0
+  lightPresetId: 0
+  eventPresetId: 0
+  lightLayer: 0
+  occlusionLayer: 1
+  translucentLayer: 0
+  translucentPresetId: 0
+  color: {r: 0.75, g: 1, b: 0.95633495, a: 0.578}
+  size: 2
+  spotAngleInner: 0
+  spotAngleOuter: 359.99997
+  coreSize: 0.5
+  falloff: 0
+  lightStrength: 1
+  outerAngle: 10
+  lightRadius: 1
+  shadowDistanceClose: 0
+  shadowDistanceFar: 3
+  maskTranslucencyQuality: 0
+  maskTranslucencyStrength: 1
+  applyRotation: 1
+  textureSize: 0
+  meshMode:
+    enable: 0
+    alpha: 0.517
+    shader: 0
+    materials:
+    - {fileID: 0}
+    sortingLayer:
+      name: DefaultFront
+      Order: 0
+  bumpMap:
+    intensity: 1
+    depth: 1
+  whenInsideCollider: 0
+  lightSprite: 0
+  sprite: {fileID: 21300000, guid: 6592d6be03fd808449716a11558d506f, type: 3}
+  spriteFlipX: 0
+  spriteFlipY: 0
+  freeFormFalloff: 1
+  freeFormPoint: 0
+  freeFormFalloffStrength: 0
+  freeFormPoints:
+    points:
+    - {x: 0.6313448, y: 0.20440912}
+    - {x: -0.16939306, y: 0.13705254}
+    - {x: -2.971459, y: -9.259388}
+    - {x: 4.0466113, y: -9.1633}
+  drawingEnabled: 1
+  drawingTranslucencyEnabled: 1
 --- !u!1 &8350185398053970353
 GameObject:
   m_ObjectHideFlags: 0
@@ -10423,9 +10518,9 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1136626539
+  m_SortingLayer: 4
+  m_SortingOrder: -30
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
