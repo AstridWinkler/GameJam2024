@@ -317,11 +317,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0821a9aa773a45c44b508c0be2487323, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFollow: {fileID: 0}
   eyes: {fileID: 5736747300252437783}
   tail: {fileID: 5736747299469554797}
   tail2: {fileID: 5736747300649570987}
-  MoveSpeed: 4
+  MoveSpeed: 6
   MaxDist: 10
   MinDist: 0
 --- !u!1 &5736747300649570988

@@ -58,14 +58,14 @@ public class KataInputHandler : MonoBehaviour
         {
             GameManager.Gameplay.TravelShimerImagePopup();
             shimmerCooldown = new GameTimer(0.5f);
+                playerMovementHandler.PlaceSpawnPoint();
 
             new GameTimer(0.01f, () =>
             {
-                playerMovementHandler.PlaceSpawnPoint();
+
                 playerMovementHandler.MoveDownShimmer();
                 // LightingManager2D.Instance.UpdateInternal();
 
-                LightingManager2D.Instance.Reinit();
 
 
                 ShimmerLevelBlock.Instance.SetShimmerDepth(GameManager.Gameplay.currentDepth);
@@ -75,22 +75,26 @@ public class KataInputHandler : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Z) && shimmerCooldown.IsNullOrInactive())
         {
-            shimmerCooldown = new GameTimer(0.5f);
-            playerMovementHandler.InputKill();
 
-            if (GameManager.Gameplay.currentDepth > 0)
+            GameManager.Gameplay.TravelShimerImagePopup();
+            shimmerCooldown = new GameTimer(0.5f);
+
+            new GameTimer(0.01f, () =>
             {
-                LightingManager2D.Instance.Reinit();
+
+
 
                 playerMovementHandler.InputKill();
-            playerMovementHandler.RemoveSpawnPoint();
-                playerMovementHandler.MoveUpShimmer();
-            ShimmerLevelBlock.Instance.SetShimmerDepth(GameManager.Gameplay.currentDepth);
-            }
-            else
-            {
+
+                if (GameManager.Gameplay.currentDepth > 0)
+                {
+
+                    playerMovementHandler.InputKill();
+                    playerMovementHandler.MoveUpShimmer();
+                    ShimmerLevelBlock.Instance.SetShimmerDepth(GameManager.Gameplay.currentDepth);
+                }
+            });
       
-            }
 
         }
         

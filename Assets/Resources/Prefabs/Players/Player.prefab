@@ -5395,6 +5395,7 @@ GameObject:
   - component: {fileID: -3440233343245782905}
   - component: {fileID: 777259114524715062}
   - component: {fileID: -3200510523021716265}
+  - component: {fileID: -1106318125588851071}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -5533,6 +5534,22 @@ MonoBehaviour:
   lockAirControl: 0
   effectErrorParticles: {fileID: 7394107645451779486, guid: af3a7f57fe99eaa47973a1028f85e958,
     type: 3}
+  source: {fileID: -1106318125588851071}
+  footstep1:
+    useFileReference: 1
+    sourceFile: {fileID: 11400000, guid: c8267832cfcedbf448175d73e848a5e5, type: 2}
+    overrideFileVolume: 0
+    overrideFilePitch: 0
+    clips:
+    - {fileID: 0}
+    volume:
+      value: 1
+      variation: 0.05
+    pitch:
+      value: 1
+      variation: 0.05
+    test: {x: 0, y: 0}
+  currentGrabbedObject: {fileID: 0}
 --- !u!114 &777259114524715062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5560,6 +5577,76 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b4a76dd98e2344faf3b7c4a0165a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1106318125588851071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777259114524715054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6b1cf6ee71864489d536b7dccc3ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSourceType: 1
+  source: {fileID: 0}
+  maxDistance: 30
+  volumeCoeficient: 1
+  stereoByDistance:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ambiantSound:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.75
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dopplerEffect: 0.1
+  audioMixer: -1
+  sourcePresset: -1
+  loopSound: 0
+  mixerType: -1
+  overrideMixer: {fileID: 0}
 --- !u!1 &777259114650167344
 GameObject:
   m_ObjectHideFlags: 0

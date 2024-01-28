@@ -1,3 +1,6 @@
+using logiked.audio;
+using logiked.source.extentions;
+using logiked.source.types;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,7 +16,10 @@ public class KataPlayerController : PlayerMovementHandler
     [SerializeField]
     private GameObject effectErrorParticles;
 
-
+    [SerializeField]
+    GameAudioSource source;
+    [SerializeField]
+    GameSound footstep1;
 
 
 
@@ -43,11 +49,24 @@ public class KataPlayerController : PlayerMovementHandler
         UpdateAction();
         LastframeVelocity = rb.velocity;
         SetNearItem();
+
+
+        if(rb.velocity.x.Abs() > 3)
+        {
+
+            if (audioLoop.IsNullOrInactive() && playerCollisionHandler.playerOn == PlayerCollisionHandler.PlayerOn.Ground) {
+                source.PlaySound(footstep1);
+                    audioLoop = new GameTimer(0.18f);
+                    }
+        }
+
     }
+
+    GameTimer audioLoop;
 
 
     public bool haveAnObject => currentGrabbedObject != null;
-    SimpleObject currentGrabbedObject;
+    public SimpleObject currentGrabbedObject;
 
     SimpleObject targetObjectToGrab;
 
@@ -71,7 +90,7 @@ public class KataPlayerController : PlayerMovementHandler
     }
 
 
-    void ReleaseObject()
+    public  void ReleaseObject()
     {
 
         currentGrabbedObject.SetReleased();
@@ -82,6 +101,13 @@ public class KataPlayerController : PlayerMovementHandler
         currentGrabbedObject.gameObject.layer = 0;
         currentGrabbedObject = null;
     }
+
+    public void ForceGrabObject(SimpleObject obj)
+    {
+        targetObjectToGrab = obj;
+        GrabObject();
+    }
+
     void GrabObject()
     {
         currentGrabbedObject = targetObjectToGrab;
@@ -98,7 +124,7 @@ public class KataPlayerController : PlayerMovementHandler
     {
         if (haveAnObject) return null;
 
-        return Physics2D.OverlapCircleAll(transform.position, 5f).Where(m => m.tag == "Item").Select(m => m.GetComponent<SimpleObject>()).NotNull().OrderBy(m => Vector2.Distance(transform.position, m.transform.position)).Where(m => !m.cannotBeGrab).FirstOrDefault();
+        return Physics2D.OverlapCircleAll(transform.position, 2f).Where(m => m.tag == "Item").Select(m => m.GetComponent<SimpleObject>()).NotNull().OrderBy(m => Vector2.Distance(transform.position, m.transform.position)).Where(m => !m.cannotBeGrab).FirstOrDefault();
 
     }
 

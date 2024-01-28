@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: MrKata_Die_It_Yourself
+  productName: ShimmerSwitcher
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -599,7 +599,7 @@ PlayerSettings:
     PS4: UNITY_POST_PROCESSING_STACK_V2
     PS5: UNITY_POST_PROCESSING_STACK_V2
     Stadia: UNITY_POST_PROCESSING_STACK_V2
-    Standalone: UNITY_POST_PROCESSING_STACK_V2;USING_Logiked_2DTools;USING_Logiked_Language;USING_Logiked_Source
+    Standalone: UNITY_POST_PROCESSING_STACK_V2;USING_Logiked_2DTools;USING_Logiked_AudioSystem;USING_Logiked_Language;USING_Logiked_Source
     WebGL: UNITY_POST_PROCESSING_STACK_V2
     Windows Store Apps: UNITY_POST_PROCESSING_STACK_V2
     XboxOne: UNITY_POST_PROCESSING_STACK_V2

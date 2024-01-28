@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: SnowLevel
   m_EditorClassIdentifier: 
   defaultMods: 0
-  mainMusic: {fileID: 8300000, guid: 0ecb4f893e3b69f4894ae0dbce41ef63, type: 3}
+  mainMusic: {fileID: 0}

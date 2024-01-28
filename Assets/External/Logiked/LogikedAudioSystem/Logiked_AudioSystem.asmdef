@@ -1,0 +1,19 @@
+{
+    "name": "Logiked_AudioSystem",
+    "rootNamespace": "",
+    "references": [
+        "Logiked_Source"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "USING_Logiked_AudioSystem",
+        "USING_Logiked_Source"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
