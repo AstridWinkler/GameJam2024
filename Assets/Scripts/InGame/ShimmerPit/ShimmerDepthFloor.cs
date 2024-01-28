@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -8,10 +9,13 @@ using UnityEditor;
 
 public class ShimmerDepthFloor : MonoBehaviour
 {
-    public enum TilemapCloneMode { ExactSame}
+    public enum TilemapCloneMode { ExactSame, NotUpdqatedAnymore}
 
     [SerializeField]
     private Transform currentTilemapParent;
+    [SerializeField]
+    private Transform objectsToEnable;
+
 
     [SerializeField]
     private TilemapCloneMode clonningMode = TilemapCloneMode.ExactSame;
@@ -66,6 +70,12 @@ public class ShimmerDepthFloor : MonoBehaviour
             DrawDefaultInspector();
 
         }
+    }
+
+    internal void SetDepthActive(bool v)
+    {
+        if (objectsToEnable != null)
+            objectsToEnable.gameObject.SetActive(v);
     }
 
 #endif

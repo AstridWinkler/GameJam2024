@@ -92,7 +92,7 @@ namespace FunkyCode
 						{
 							if (manager != instance)
 							{
-								manager.DestroySelf();
+							//	manager.DestroySelf();
 							}
 						}
 
@@ -108,7 +108,7 @@ namespace FunkyCode
 						{
 							if (manager != instance)
 							{
-								manager.DestroySelf();
+							//	manager.DestroySelf();
 							}
 						}
 

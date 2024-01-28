@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using logiked.source.types;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -50,8 +51,14 @@ public class KataInputHandler : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             GameManager.Gameplay.TravelShimerImagePopup();
-            playerMovementHandler.PlaceSpawnPoint();
-            playerMovementHandler.MoveDownShimmer();
+
+            new GameTimer(0.01f, () =>
+            {
+                playerMovementHandler.PlaceSpawnPoint();
+                playerMovementHandler.MoveDownShimmer();
+                ShimmerLevelBlock.Instance.SetShimmerDepth(GameManager.Gameplay.currentDepth);
+            });
+
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
@@ -61,8 +68,9 @@ public class KataInputHandler : MonoBehaviour
             if (GameManager.Gameplay.currentDepth > 0)
             {
                 playerMovementHandler.InputKill();
-          playerMovementHandler.RemoveSpawnPoint();
+            playerMovementHandler.RemoveSpawnPoint();
                 playerMovementHandler.MoveUpShimmer();
+            ShimmerLevelBlock.Instance.SetShimmerDepth(GameManager.Gameplay.currentDepth);
             }
             else
             {
@@ -70,6 +78,7 @@ public class KataInputHandler : MonoBehaviour
             }
 
         }
+        
 
 
         /*

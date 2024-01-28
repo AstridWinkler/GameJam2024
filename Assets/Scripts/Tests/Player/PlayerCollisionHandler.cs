@@ -20,6 +20,7 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     #region Referneces
     private Collider2D col;
+    public Collider2D Col  => col;
     private Transform tr;
     #endregion
 
@@ -114,6 +115,8 @@ public class PlayerCollisionHandler : MonoBehaviour
 
         var midRectSize = new Vector2(slopeColliderSizeWidth / 2f, slopeColliderSizeHeight);
 
+        Physics2D.queriesHitTriggers = false;
+
         if (useSlopeRacast)
         {
             var groundCast = Physics2D.BoxCastAll((Vector3)slopeOffset + Vector3.right * 0.05f * slopeColliderSizeWidth, new Vector3(0.1f * slopeColliderSizeWidth, slopeColliderSizeHeight, 0.1f), 0, Vector2.right, midRectSize.x * 0.9f, groundLayer);
@@ -122,6 +125,7 @@ public class PlayerCollisionHandler : MonoBehaviour
         }
 
         bool onGround = Physics2D.BoxCast(downOffset, new Vector2(bottomColliderWidth, bottomColliderHeight), 0, Vector2.down, 0, groundLayer).transform != null;
+        Physics2D.queriesHitTriggers = true;
 
 
 
@@ -134,11 +138,15 @@ public class PlayerCollisionHandler : MonoBehaviour
             sliding =  PlayerSliding.no;
 
 
-   
+
+        Physics2D.queriesHitTriggers = false;
 
 
         bool onRightWall = Physics2D.OverlapCircle(rightOffset, wallsColliderRadius, groundLayer);
         bool onLeftWall = Physics2D.OverlapCircle(leftOffset, wallsColliderRadius, groundLayer);
+
+        Physics2D.queriesHitTriggers = true;
+
 
         //Check ground
         if (onGround && playerOn != PlayerOn.Ground)

@@ -18,6 +18,7 @@ MonoBehaviour:
   globalVariablePath: []
   activeModulesName:
   - Logiked_2DTools
+  - Logiked_Language
   - Logiked_Source
   savedGlobals:
   - objectArray: []

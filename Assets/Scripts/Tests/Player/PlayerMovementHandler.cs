@@ -7,7 +7,7 @@ public class PlayerMovementHandler : MonoBehaviour
 {
 
     protected Rigidbody2D rb;
-    private PlayerCollisionHandler playerCollisionHandler;
+    protected PlayerCollisionHandler playerCollisionHandler;
     private bool boost;
     private bool jumpingKey;
     private bool isUsingJumpingKey;
