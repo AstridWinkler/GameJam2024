@@ -11,7 +11,7 @@ public class SetActive : MonoBehaviour
     [SerializeField]
     float time;
 
-    void Start()
+    void OnEnable()
     {
 
         new Tra_LoopPack(()=> { obj.SetActive(state); }, time, GameStateController.Wait_MobClassic);

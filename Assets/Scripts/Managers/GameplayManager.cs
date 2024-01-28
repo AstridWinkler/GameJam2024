@@ -6,6 +6,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class GameplayManager : BasicManager
 {
@@ -31,6 +32,11 @@ public class GameplayManager : BasicManager
     [SerializeField]
     Tilemap[] mainPaintMaps;
     public Tilemap[] MainPaintMaps { get { return mainPaintMaps; } }
+
+    [SerializeField]
+    private RawImage travelShimerImage;
+
+
 
 
     public LevelBlock LevelContent { get { return levelContent; } }
@@ -81,7 +87,55 @@ public class GameplayManager : BasicManager
 
    public  Vector3 TheoricalPlayerPos { get { return  (currentPlayerCtr != null )? currentPlayerCtr.transform.position : theoricalPlayerPos; } }
     Vector3 theoricalPlayerPos;
-    
+
+
+    //RenderTexture screenShotTex;
+    Texture2D tex;
+    bool takeScreenshot;
+
+
+    public void TravelShimerImagePopup()
+    {
+        StartCoroutine(TakeTemporaryScreenshot());
+    }
+
+
+
+
+
+    IEnumerator TakeTemporaryScreenshot()
+    {
+        takeScreenshot = true;
+
+        var camera = GameManager.CamController.Camera;
+
+        int resX = Screen.currentResolution.width;
+        int resY = Screen.currentResolution.height;
+
+
+        if (tex == null)
+            tex = new Texture2D(resX, resY, TextureFormat.RGB24, false);
+
+        travelShimerImage.texture = tex;
+
+
+
+        // wait for graphics to render
+        yield return new WaitForEndOfFrame();
+
+        // create a texture to pass to encoding
+
+        // assign new texture to variable
+
+
+        // put buffer into texture
+        tex.ReadPixels(new Rect(0,0,tex.width, tex.height), 0, 0);
+        tex.Apply();
+        travelShimerImage.gameObject.SetActive(true);
+
+    }
+
+
 
 
 
@@ -309,11 +363,11 @@ public class GameplayManager : BasicManager
                 float respawnTime2 = 1f;
 
                 var dist = Mathf.Max( (Vector2.Distance(lastDiePos, respawnPos) / 12f).Floor(), 1);
-                respawnTime2 = respawnTime * dist;
+                respawnTime2 = respawnTime;// * dist;
 
                 var lev = levelContent;
                 instP = new Tra_LoopPack(() => { if (lev == levelContent) SummonPlayer(); IsDashing = false; }, respawnTime2, GameStateController.Wait_MobClassic);
-                ParticlePlayerMovement(lastDiePos, respawnPos, respawnTime2, dist, true);
+                ParticlePlayerMovement(lastDiePos, respawnPos, respawnTime2, /*dist*/2, true);
             }
         }    
 	}

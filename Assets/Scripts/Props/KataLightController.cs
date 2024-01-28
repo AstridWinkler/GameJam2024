@@ -127,6 +127,7 @@ public class KataLightController : MonoBehaviour
         entityLight.spriteFlipX = mapLight.spriteFlipX;
         mapLight.spriteFlipY = entityLight.spriteFlipY;
         entityLight.sprite = mapLight.sprite;
+        entityLight.applyRotation = mapLight.applyRotation;
 
 
     }

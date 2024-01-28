@@ -40,18 +40,27 @@ public class KataInputHandler : MonoBehaviour
         if (inputs.GetKey("Action", keyMode.DownPress))
             playerMovementHandler.InputAction();
 
-       // if (inputs.GetKey("Place Spawn point", keyMode.DownPress))
-         //   playerMovementHandler.PlaceSpawnPoint();
-       
+        // if (inputs.GetKey("Place Spawn point", keyMode.DownPress))
+        //   playerMovementHandler.PlaceSpawnPoint();
+
         //if (inputs.GetKey("Remove Spawn point", keyMode.DownPress))
         //    playerMovementHandler.RemoveSpawnPoint();
 
 
         if (Input.GetKeyDown(KeyCode.S))
+        {
+            GameManager.Gameplay.TravelShimerImagePopup();
+            playerMovementHandler.PlaceSpawnPoint();
             playerMovementHandler.MoveDownShimmer();
+        }
 
         if (Input.GetKeyDown(KeyCode.Z))
+        {
+            playerMovementHandler.InputKill();
+            playerMovementHandler.RemoveSpawnPoint();
             playerMovementHandler.MoveUpShimmer();
+
+        }
 
 
         /*
