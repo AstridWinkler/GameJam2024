@@ -24,7 +24,6 @@ public class Logic_SimpleDoor : LogicBlock_Base
     public override void SetState(object obj)
     {
         var st = (bool)obj;
-        if (st != state)
         {
             state = st;
             UpdateAnim();

@@ -45,7 +45,7 @@ MonoBehaviour:
     RectSize: {x: 150, y: 75}
     transitionMode: 0
     file: {fileID: 11400000, guid: f87f6af4e5486184193df702f8f7154c, type: 2}
-    speedModifier: 1
+    speedModifier: 2
     variationVariableId: 0
     transitionPack:
       allowMultipleTransition: 1

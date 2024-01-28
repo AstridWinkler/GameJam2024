@@ -1,0 +1,20 @@
+{
+    "name": "Logiked_Language",
+    "rootNamespace": "",
+    "references": [
+        "Logiked_Source",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "USING_Logiked_Language",
+        "USING_Logiked_Source"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

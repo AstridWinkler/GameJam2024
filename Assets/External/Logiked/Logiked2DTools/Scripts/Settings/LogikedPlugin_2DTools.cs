@@ -14,6 +14,8 @@ using UnityEditor.Presets;
 namespace logiked.Tool2D.settings
 {
     /// <summary>
+    /// <inheritdoc/>
+    /// 
     /// Les propriétés du plugin 2DTools
     /// </summary>
     /// <seealso cref="logiked.LogikedAssemblySettings" />
@@ -33,10 +35,13 @@ namespace logiked.Tool2D.settings
             }
         }
 
+
         public const string MenuItemName = "Assets/2D Tools/";
 #endif
 
 
+        
+        public override Color LogColors => (Color.yellow + Color.white*0.5f)*0.65f;
 
 
 

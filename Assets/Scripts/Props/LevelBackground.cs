@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ExecuteAlways]
-public class LevelBackground : MonoBehaviour, ISceneObject
+public class LevelBackground : MonoBehaviour//, ISceneObject
 {
     public float sizeDecreaseFactor = 1f;
     public float distanceDecreaseMovingFactor = 1f;
+
+    public float yOffset = 0;
 
     [Serializable]
     private class BackgroundObject
@@ -43,24 +45,43 @@ public class LevelBackground : MonoBehaviour, ISceneObject
     */
 
 
-
+    [SerializeField]
     private Camera mainCam;
 
     bool sceneStarted = false;
 
 
-    void ISceneObject.OnSceneLoaded()
+    //  void ISceneObject.OnSceneLoaded()
+
+    void Awake()
+    {
+        CheckCam();
+    }
+
+    void CheckCam()
     {
 
-        sceneStarted = true;
 
         //  instanceParentList = new Dictionary<Transform, Transform>();
 
         //   DestroyIntances();
         //    RebuildParents();
 
-        mainCam = Application.isPlaying ? GameManager.CamController.Camera : Camera.main;
+        if(mainCam == null)
+            mainCam = Application.isPlaying ? GameManager.CamController?.Camera : Camera.main;
 
+        if(mainCam == null || mainCam.gameObject.tag != "MainCamera")
+        {
+            mainCam = null;
+
+            if (Application.isPlaying)
+                Debug.Log("No camera found Gamemanager.CamController");
+
+            return;
+        }
+
+
+        sceneStarted = true;
 
         baseCamPosition = mainCam.transform.position;
 
@@ -117,6 +138,15 @@ public class LevelBackground : MonoBehaviour, ISceneObject
     }
 
 
+//#if UNITY_EDITOR
+    private void Update()
+    {
+        if (mainCam == null)
+        {
+            CheckCam();
+        }
+    }
+//#endif
 
     void MoveBackground(BackgroundObject background)
     {
@@ -124,10 +154,13 @@ public class LevelBackground : MonoBehaviour, ISceneObject
         background.zAxisDrag = background.basepPlanPosition.z;
 
 
+        var realCamBasePos = baseCamPosition - yOffset*Vector2.up;
 
 
-        var pos = background.basepPlanPosition + ((Vector3)baseCamPosition - mainCam.transform.position) / Mathf.Sqrt (1 + background.zAxisDrag * distanceDecreaseMovingFactor * background.dragCoef);
+        var pos = background.basepPlanPosition + ((Vector3)realCamBasePos - mainCam.transform.position) / Mathf.Sqrt (1 + background.zAxisDrag * distanceDecreaseMovingFactor * background.dragCoef);
         pos.z = background.basepPlanPosition.z;
+
+
         background.backgroundObject.localPosition = pos;
 
 

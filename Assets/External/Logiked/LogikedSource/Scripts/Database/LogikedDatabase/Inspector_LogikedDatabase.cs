@@ -743,11 +743,11 @@ namespace logiked.source.database.editor
                 GUILayout.FlexibleSpace();
                 GUILogiked.Panels.GUIDrawEditorIcon(() =>
                 {
-                    var result = LogikedWindowsAlert.Message_Box("Voulez vous suprimer les fichiers de l'item ?", "Delete", LogikedWindowsAlert.WindowsAlertType.YesNoCancel);
+                    var result = EditorUtility.DisplayDialog("Delete", "Voulez vous suprimer les fichiers de l'item ?", "yes", "no");
 
                     switch (result)
                     {
-                        case LogikedWindowsAlert.WindowsAlertResult.YES:
+                        case true:
 
                             var path = AssetDatabase.GetAssetPath(desc);
 
@@ -764,7 +764,7 @@ namespace logiked.source.database.editor
                             AssetDatabase.DeleteAsset(path);
                             goto NO;
 
-                        case LogikedWindowsAlert.WindowsAlertResult.NO:
+                        case false:
 
                         NO:
                             if (thisDatabase != null)

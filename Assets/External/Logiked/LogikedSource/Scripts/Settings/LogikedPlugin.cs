@@ -8,19 +8,49 @@ using System.Collections;
 using System.IO;
 using System.Linq;
 using UnityEngine;
+using logiked.source.extentions;
 
 namespace logiked.source.types
 {
 
 
+     interface ILogikedPlugin
+    {
+        public Color LogColors { get; }
+    }
+
+
+    internal class LogikedPlugin : LogikedPlugin<LogikedPlugin>
+    {
+        internal const string documentation = "https://logiked.github.io/LogikedAssembliesOnlineDocumentation/";
+
+
+        internal const string documentation_ConfigurationWindow = documentation + "articles/Features/logikedSourceProjectWindow/page.html";
+
+        internal const string documentation_ConfigurationWindow_navigation = documentation_ConfigurationWindow + "#navigation";
+
+        internal const string documentation_ConfigurationWindow_packages = documentation_ConfigurationWindow + "#packages";
+        internal const string documentation_ConfigurationWindow_scenes = documentation_ConfigurationWindow + "#scenes";
+        internal const string documentation_ConfigurationWindow_globals  = documentation_ConfigurationWindow + "#globals";
+
+    }
 
 
     /// <summary>
-    /// Fichier-signleton de configuration de l'assembly.
+    /// Scriptable object unique à chaque plugin permetant la configuration des assembly Logiked. 
+    /// Accessible via le code par un accesseur statique <c>Instance</c> afin d'être disponible dans tout le projet.
+    /// Accessible dans l'inspecteur unity dans le dossier Resources/Logiked
     /// </summary>
-    /// <seealso cref="ScriptableObject" />
-    public abstract class LogikedPlugin<T> : ScriptableObject where T : ScriptableObject
+    public abstract class LogikedPlugin<T> : ScriptableObject, ILogikedPlugin where T : ScriptableObject
     {
+        public class DefaultLogikedPlugin : LogikedPlugin<DefaultLogikedPlugin>
+        {
+
+        }
+
+
+
+        public const string MenuItemName = "Assets/Source/";
 
         public const string LabelName = "LogikedPluginSettings";
 
@@ -43,17 +73,29 @@ namespace logiked.source.types
             }
         }
 
+        /// <summary>
+        /// Couleur des logs de ce package
+        /// </summary>
+        public virtual Color LogColors { get => Color.gray; }
 
 
-
+        /// <summary>
+        /// Les les informations du plugin Logiked Source
+        /// </summary>
+         public static void Log(object message, DebugC.ErrorLevel errorLevel  = DebugC.ErrorLevel.Log, Object context = null)
+        {
+            DebugC.Log($"{message}",                  
+                ((ILogikedPlugin)Instance).LogColors, 
+                typeof(T).Assembly.GetName().Name, errorLevel: errorLevel, context: context);
+        }
 
 
 
 #if UNITY_EDITOR
         /// <summary>
-        /// Creer une instance tu plugin T dans un dossier resource, dans un répertoire parralelle à Path
+        /// Creer une instance du plugin <c>T</c> dans un dossier resource, dans un répertoire parralelle à Path
         /// </summary>    
-        public static bool CreateSettingsInstance(/*string path, */string fileName, string asbName)
+        internal protected static bool CreateSettingsInstance(/*string path, */string fileName, string asbName)
         {
 
             //path = "Assets" + System.Text.RegularExpressions.Regex.Split(path, "Assets")[1];
@@ -61,6 +103,7 @@ namespace logiked.source.types
             var dir = "Assets\\Resources\\Logiked";
             var fic = dir + "\\" + fileName + ".asset";
             T ass = null;
+
 
 
             if (!Directory.Exists(dir))
@@ -74,9 +117,9 @@ namespace logiked.source.types
                 ass = CreateInstance<T>();
                 AssetDatabase.CreateAsset(ass, fic);
                 AssetDatabase.SetLabels(ass, new string[] { LabelName, asbName });
-
+                _instance = ass;
                 //UnityEditor.AssetDatabase.SaveAssets();
-                Debug.Log("<color=#800080><size=16>Automatic setting file created : " + fic + "</size></color>");
+                Log($"Automatic setting file created : {fic}");
                 //  packages.EditorCoroutines.EditorCoroutineUtility.StartCoroutine(SaveAssetFile(), ass);
                 return true;
             }

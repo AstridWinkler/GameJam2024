@@ -1,11 +1,13 @@
 ﻿
 using logiked.source.extentions;
+using logiked.source.types;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using UnityEngine.UI;
 
 public class GameplayManager : BasicManager
 {
@@ -32,6 +34,11 @@ public class GameplayManager : BasicManager
     Tilemap[] mainPaintMaps;
     public Tilemap[] MainPaintMaps { get { return mainPaintMaps; } }
 
+    [SerializeField]
+    private RawImage travelShimerImage;
+
+
+
 
     public LevelBlock LevelContent { get { return levelContent; } }
     [SerializeField, HideInInspector]
@@ -57,7 +64,11 @@ public class GameplayManager : BasicManager
 	Transform defaultSpawnPoint;
 
     [SerializeField]
+    GameObject dieScreenPopup;
+
+    [SerializeField]
     Stack<Transform> spawnPointInstances = new Stack<Transform>();
+    public int currentDepth => spawnPointInstances.Count;
 
     [SerializeField]
  Transform currentSpawnPoint => spawnPointInstances.Count == 0 ? defaultSpawnPoint : spawnPointInstances.Peek();
@@ -66,7 +77,19 @@ public class GameplayManager : BasicManager
     public Vector3 DefaultSpawnPointPosition { get => defaultSpawnPoint.position; }
 
     public enum DieEnum {Explosion = 0, SimpleCorpse = 1 , Desintegration=2}
-   public enum DieKiller {None = 0, Spikes = 1 }
+
+    public void DieAndReloadMap()
+    {
+        GameManager.Gameplay.TravelShimerImagePopup();
+
+
+       
+        new GameTimer(0.05f, () => dieScreenPopup.SetActive(true));
+        new GameTimer(1.0f, () =>  ReloadLevel());
+
+    }
+
+    public enum DieKiller {None = 0, Spikes = 1 }
 
     [SerializeField]
     GameObject[] diePref;
@@ -81,11 +104,64 @@ public class GameplayManager : BasicManager
 
    public  Vector3 TheoricalPlayerPos { get { return  (currentPlayerCtr != null )? currentPlayerCtr.transform.position : theoricalPlayerPos; } }
     Vector3 theoricalPlayerPos;
-    
+
+
+    //RenderTexture screenShotTex;
+    Texture2D tex;
+    bool takeScreenshot;
+
+
+    public void TravelShimerImagePopup()
+    {
+        StartCoroutine(TakeTemporaryScreenshot());
+    }
 
 
 
-    private void LoadLevel(string name)
+
+
+    IEnumerator TakeTemporaryScreenshot()
+    {
+        takeScreenshot = true;
+
+        var camera = GameManager.CamController.Camera;
+
+        int resX = Screen.currentResolution.width;
+        int resY = Screen.currentResolution.height;
+
+
+        if (tex == null)
+            tex = new Texture2D(resX, resY, TextureFormat.RGB24, false);
+
+        travelShimerImage.texture = tex;
+
+
+
+        // wait for graphics to render
+        yield return new WaitForEndOfFrame();
+
+        // create a texture to pass to encoding
+
+        // assign new texture to variable
+
+
+        // put buffer into texture
+        tex.ReadPixels(new Rect(0,0,tex.width, tex.height), 0, 0);
+        tex.Apply();
+        travelShimerImage.gameObject.SetActive(true);
+
+    }
+
+
+
+    private void ReloadLevel()
+    {
+        LoadLevel(SceneManager.GetActiveScene().name);
+
+    }
+
+
+        private void LoadLevel(string name)
     {
         UnloadCurrentLevel();
 
@@ -309,11 +385,11 @@ public class GameplayManager : BasicManager
                 float respawnTime2 = 1f;
 
                 var dist = Mathf.Max( (Vector2.Distance(lastDiePos, respawnPos) / 12f).Floor(), 1);
-                respawnTime2 = respawnTime * dist;
+                respawnTime2 = respawnTime;// * dist;
 
                 var lev = levelContent;
                 instP = new Tra_LoopPack(() => { if (lev == levelContent) SummonPlayer(); IsDashing = false; }, respawnTime2, GameStateController.Wait_MobClassic);
-                ParticlePlayerMovement(lastDiePos, respawnPos, respawnTime2, dist, true);
+                ParticlePlayerMovement(lastDiePos, respawnPos, respawnTime2, /*dist*/2, true);
             }
         }    
 	}
@@ -397,8 +473,14 @@ public class GameplayManager : BasicManager
 
     public void KillPlayer(DieEnum dieMode, DieKiller killer = DieKiller.None, Vector2 respawnPos = default(Vector2) )
 	{
+        bool respawn = currentDepth > 0;
 
-   //     Debug.Log("player killed");
+        if (!respawn)
+            GameManager.Gameplay.DieAndReloadMap();
+
+
+
+        //     Debug.Log("player killed");
         if (currentPlayer != null && !trySpawn)
         {
             currentPlayerCtr.OnDie();
@@ -451,8 +533,8 @@ public class GameplayManager : BasicManager
                 Destroy(currentPlayer);
             }
 
-
-			InstPlayer(false, respawnPos);
+            if(respawn)
+			    InstPlayer(false, respawnPos);
 		}
 	}
 

@@ -56,7 +56,14 @@ public class LevelBlock : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        mainCamera = GetComponentInChildren<Camera>();
+
+        var cams = GetComponentsInChildren<Camera>();
+
+        mainCamera = cams.FirstOrDefault(m => m.tag == "MainCamera");
+
+        if (mainCamera == null)
+            Debug.LogError("No MainCam found");
+
         shimmerWorldModifier = GetComponent<ShimmerLevelBlock>();
 
 #if UNITY_EDITOR

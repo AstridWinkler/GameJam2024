@@ -5,18 +5,13 @@ using UnityEngine;
 namespace logiked.source.manager
 {
 
-    public interface IBaseManager
-    {
-        public void Initialization();
-        public GameObject gameObject { get; }
-    }
 
 
         /// <summary>
         /// Type de base pour tout vos managers-singletons de votre scène
         /// </summary>
         /// <typeparam name="T">Type de votre Manager à récrire (pour le champ `Instance` du singleton)</typeparam>
-        public abstract class BaseManager<T> : MonoBehaviour, IBaseManager where T : MonoBehaviour
+        public abstract class BaseManager<T> : IBaseManager where T : MonoBehaviour
     {
         [NonSerialized] private bool alreadyInit = false;
         public bool AlreadyInit => alreadyInit;
@@ -36,9 +31,10 @@ namespace logiked.source.manager
         /// Méthode d'Initialisation de votre manager (appelée par le GameManager). <br/>
         /// Cela permet d'initialiser tout les Managers dans un explicitement déterminé
         /// contrairement aux fonction event Start(), Awake().. qui s'executent parfois de manière   
-        /// aléatoire. Par exemple, c'est assez pénible quand votre jeu démare avant que vos resources soient initialisés.
+        /// aléatoire. Par exemple, c'est assez pénible quand votre jeu démare avant que vos resources soient initialisés.<br></br><br></br>
+        /// Attention à ne pas appeler d'autre managers pendant cette initialisation !
         /// </summary>
-        public void Initialization()
+        public sealed override void Initialization()
         {
             if (alreadyInit) return;
             alreadyInit = true;
@@ -46,9 +42,7 @@ namespace logiked.source.manager
         }
 
 
-        ///<inheritdoc cref="Initialization"/>
-        protected abstract void InitManager();
-
+ 
 
 
     }

@@ -1,8 +1,10 @@
-﻿using logiked.Tool2D.animation;
+﻿using logiked.source.attributes;
+using logiked.Tool2D.animation;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace logiked.Tool2D.animation
 {
@@ -11,6 +13,9 @@ namespace logiked.Tool2D.animation
     [ExecuteAlways]
     public class SimpleAnimationRenderer2D : MonoBehaviour, I_Animable2D
     {
+        public enum AnimableRenderTypeEnum { SpriteRenderer, UiImage }
+
+
         [SerializeField]
         Animation2DFile animationFile;
         [SerializeField]
@@ -20,8 +25,20 @@ namespace logiked.Tool2D.animation
         private Animation2DReader currentAnim;
 
         [SerializeField]
-        private SpriteRenderer render;
-        
+        private AnimableRenderTypeEnum renderType = AnimableRenderTypeEnum.SpriteRenderer;
+        public AnimableRenderTypeEnum RenderType { get => RenderType; set => RenderType = AnimableRenderTypeEnum.SpriteRenderer; }
+
+
+        [ShowIf(nameof(renderType), "==", AnimableRenderTypeEnum.SpriteRenderer)]
+        [SerializeField]
+        private SpriteRenderer rendererSprite;
+
+
+        [ShowIf( ShowIfRepeatMode.NotSame)]
+        [SerializeField]
+        private Image rendererImage;
+
+
 
         /// <summary>
         /// Apply the speed to the current animatonReader
@@ -107,8 +124,22 @@ namespace logiked.Tool2D.animation
 #if UNITY_EDITOR
         public void EditorUpdate()
         {
-            if (render == null) render = GetComponentInChildren<SpriteRenderer>();
-            if (currentAnim == null || render == null) return;
+ if (currentAnim == null) return;
+
+
+            if (renderType == AnimableRenderTypeEnum.SpriteRenderer)
+            {
+                if (rendererSprite == null)
+                    rendererSprite = GetComponentInChildren<SpriteRenderer>();
+            }
+            else
+            {
+                if (rendererImage == null)
+                    rendererImage = GetComponentInChildren<Image> ();
+            }
+
+
+
             if (currentAnim.SpeedModifier != speed)
                 currentAnim.SpeedModifier = speed;
 
@@ -123,8 +154,20 @@ namespace logiked.Tool2D.animation
             if (!logiked.Tool2D.settings.LogikedPlugin_2DTools.Instance.PlayAnimationsInSceneView && !Application.isPlaying) return;
 #endif
 
+
             if (currentAnim == null) return;
-            render.sprite = currentAnim.GetCurrentSprite();
+
+            if (renderType == AnimableRenderTypeEnum.SpriteRenderer)
+            {
+                if (rendererSprite != null)
+                    rendererSprite.sprite = currentAnim.GetCurrentSprite();
+            }
+            else
+            {
+                if (rendererImage != null)
+                    rendererImage.sprite = currentAnim.GetCurrentSprite();
+            }
+
         }
 
 

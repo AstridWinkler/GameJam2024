@@ -17,7 +17,7 @@ public class CompressTexture
     const string MenuItem_RefreshAnimations = LogikedPlugin_2DTools.MenuItemName + "Cut And Refresh animations";
 
 
-    [MenuItem(MenuItem_ApplyHacheurImportSettings, priority = LogikedProjectConfig.LogikedMenuItemPriority + 20)]
+    [MenuItem(MenuItem_ApplyHacheurImportSettings, priority = LogikedProjectConfig.LogikedMenuItemPriority + 1)]
     static void ApplyImportSettings()
     {
         var objs = Selection.objects;

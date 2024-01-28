@@ -28,6 +28,12 @@ public class ShimmerLevelBlock : MonoBehaviour
     [SerializeField]
     Transform tilemapsParent;
 
+
+    [SerializeField]
+    Transform lightAndOtherSettings;
+
+
+
     [Tooltip("Nombre de différents puits de shimmers dans cette map")]
     [SerializeField]
     [Range(1, 10)]
@@ -51,15 +57,31 @@ public class ShimmerLevelBlock : MonoBehaviour
     void Awake()
     {
         Instance = this;
-    }
+        SetShimmerDepth(0);
+        
+        }
 
     void Update()
     {
 
     }
 
+    public int currentPit = 0;
+
+    public void SetShimmerDepth(int depth)
+    {
+        if(lightAndOtherSettings != null)
+            lightAndOtherSettings.gameObject.SetActive(depth == 0);
 
 
+        for (int i = 0; i < numberOfShimmerPit; i++)
+        {
+            shimerPitList[i].SetDepthActive(depth - 1);
+        }
+
+
+
+    }
 
 
 

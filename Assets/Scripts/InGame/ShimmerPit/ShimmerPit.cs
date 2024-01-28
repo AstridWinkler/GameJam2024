@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 #if UNITY_EDITOR
 using logiked.source.editor;
@@ -31,14 +32,22 @@ public class ShimmerPit : MonoBehaviour
         
     }
 
+    public void SetDepthActive(int depth)
+    {
 
+        for (int i = 0; i < numberOfDepth; i++)
+        {
+            shimmerDepthList[i].SetDepthActive(i == depth);
+        }
+
+    }
 
 #if UNITY_EDITOR
 
 
 
 
-  public  void UpdateShimmerDepth()
+    public  void UpdateShimmerDepth()
     {
 
 
@@ -80,6 +89,8 @@ public class ShimmerPit : MonoBehaviour
 
 
     }
+
+
 
     ShimmerDepthFloor CreateNewDepth()
     {

@@ -127,11 +127,14 @@ namespace logiked.Tool2D.animation
         }
 
 
-        void SetNode(Animation2DNode node)
+        void SetNode(Animation2DNode node, bool allowSameNode = false)
         {
-            currentState = node;
-            currentAnim = new Animation2DReader(currentState.File, currentState.SpeedModifier);
-            currentAnim.Play();
+            if (allowSameNode || currentState != node)
+            {
+                currentState = node;
+                currentAnim = new Animation2DReader(currentState.File, currentState.SpeedModifier);
+                currentAnim.Play();
+            }
         }
 
 
@@ -319,7 +322,8 @@ namespace logiked.Tool2D.animation
                 {
                     rule = trans.Rules[j];
 
-                    if (!rule.Evaluate( variableFromIds[rule.VariableId].Value ))
+    
+                    if (!rule.Evaluate( variableFromIds.GetOrDefault(rule.VariableId)?.Value ?? variableFromIds.GetOrDefault(0).Value ) )
                     {
                         ruleEval = false;// canel
                         break;

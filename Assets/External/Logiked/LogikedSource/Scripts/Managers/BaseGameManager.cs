@@ -31,14 +31,7 @@ namespace logiked.source.manager {
         /// <inheritdoc cref="tempInstancesParents"/>
         public static Transform TempInstParent => tempInstancesParents.transform;
 
-        [SerializeField]
-        private List<ScriptableObject> logikedPluginSettings = new List<ScriptableObject>();
 
-
-        public ScriptableObject GetPluginSettings(Type setting)
-        {
-            return logikedPluginSettings.FirstOrDefault(m => m.GetType() == setting);
-        }
 
 
         private void Update()
@@ -49,32 +42,11 @@ namespace logiked.source.manager {
 
         protected virtual void UpdateGameManager() { }
 
-        /*
 
-#if UNITY_EDITOR
-        void UpdatePlugins(UnityEditor.PlayModeStateChange change)
-        {
-            switch (change)
-            {
-                case UnityEditor.PlayModeStateChange.ExitingEditMode:
-
-                    break;
-
-
-            }
-        }
-#endif
-
-        void UpdatePlugins()
-        {
-
-        }
-        */
-
-            void Awake()
+        void Awake()
         {
 #if UNITY_EDITOR
-   //         UnityEditor.EditorApplication.playModeStateChanged += UpdatePlugins;
+            //         UnityEditor.EditorApplication.playModeStateChanged += UpdatePlugins;
 #endif
 
             if (!Application.isPlaying) return;

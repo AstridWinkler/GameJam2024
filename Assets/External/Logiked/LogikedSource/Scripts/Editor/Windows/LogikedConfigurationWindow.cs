@@ -11,6 +11,7 @@ using logiked.source.extentions;
 using logiked.source.utilities;
 using Object = UnityEngine.Object;
 using System.Collections;
+using logiked.source.types;
 
 #if JsonTest1
 using Newtonsoft.Json.Linq;
@@ -74,12 +75,16 @@ namespace logiked.source.editor
             internal bool isOpen = false;
             [SerializeField]
             internal Action contextAction;
+            [SerializeField]
+            internal string documentationUri;
 
-            public DrawSectionMethod(string name, bool isOpen, Action contextAction)
+
+            public DrawSectionMethod(string name, bool isOpen, Action contextAction, string documentationUri = null)
             {
                 this.name = name;
                 this.isOpen = isOpen;
                 this.contextAction = contextAction;
+                this.documentationUri = documentationUri;
             }
         }
 
@@ -219,9 +224,19 @@ namespace logiked.source.editor
 
         [MenuItem("Window/Logiked Configuration Window")]
         [MenuItem("Logiked/Project Configuration Window", priority = 1000)]
-        private static void OpenWindow()
+        public static void OpenWindow()
         {
-            LogikedConfigurationWindow window = GetWindow<LogikedConfigurationWindow>();
+            LogikedConfigurationWindow window;
+
+            if (HasOpenInstances<LogikedConfigurationWindow>())
+            {
+               Debug.LogWarning("Logiked Configuration Window is already open.");
+                window = GetWindow<LogikedConfigurationWindow>();
+                window.Focus();
+                return;
+            }
+
+             window = GetWindow<LogikedConfigurationWindow>();
             window.titleContent = new GUIContent("Logiked configuration");
             window.Show();
         }
@@ -247,10 +262,10 @@ namespace logiked.source.editor
             //Preservation des sections fenettres ouvertes
 
             var listSections = new List<DrawSectionMethod>();
-            listSections.Add(new DrawSectionMethod("Navigation", false, DrawNavCtx));
-            listSections.Add(new DrawSectionMethod("Logiked", false, DrawLogikedSettings));
-            listSections.Add(new DrawSectionMethod("Scenes", false, DrawScenes));
-            listSections.Add(new DrawSectionMethod("Globals", false, DrawGlobals));
+            listSections.Add(new DrawSectionMethod("Navigation", false, DrawNavCtx, LogikedPlugin.documentation_ConfigurationWindow_navigation));
+            listSections.Add(new DrawSectionMethod("Logiked", false, DrawLogikedSettings, LogikedPlugin.documentation_ConfigurationWindow_packages));
+            listSections.Add(new DrawSectionMethod("Scenes", false, DrawScenes, LogikedPlugin.documentation_ConfigurationWindow_scenes));
+            listSections.Add(new DrawSectionMethod("Globals", false, DrawGlobals, LogikedPlugin.documentation_ConfigurationWindow_globals));
 
 #if History_prototype
                 selectHistory = 0;
@@ -317,10 +332,17 @@ namespace logiked.source.editor
 
 
             GUILayout.BeginVertical("box");
+            GUILayout.BeginHorizontal();
+
             if (GUILayout.Button((box.isOpen ? "▼ " : "► ") + box.name, StyleList.Stl_buttonTxt, GUILayout.MaxHeight(18), GUILayout.MaxWidth(position.width)))
             {
                 box.isOpen = !box.isOpen;
             }
+            GUILayout.FlexibleSpace();
+            GUILogiked.Panels.GUIDrawEditorIcon(() => { Application.OpenURL(box.documentationUri); }, GUILogiked.Panels.EditorIconType.Help_Documentation_White, "Show documentation");
+
+            GUILayout.EndHorizontal();
+
 
             if (box.isOpen)
             {
@@ -580,7 +602,7 @@ namespace logiked.source.editor
 
             void RemoveCurrentWorkspace()
             {
-                if (LogikedWindowsAlert.Message_Box($"Supprimer \"{currentWordkspace.name}\" ?", "Confirmation", LogikedWindowsAlert.WindowsAlertType.YesNo) == LogikedWindowsAlert.WindowsAlertResult.YES)
+                if (UnityEditor.EditorUtility.DisplayDialog("Confirmation", $"Supprimer \"{currentWordkspace.name}\" ?", "Yes", "No"))
                 {
                     var lst = LogikedProjectConfig.Instance.Workspaces.ToList();
                     lst.RemoveAt(LogikedProjectConfig.Instance.selectedWorkspace);
@@ -740,12 +762,20 @@ namespace logiked.source.editor
             // string path = AssetDatabase.GetAssetPath(logikedPlugin);
             // path = System.IO.Path.GetDirectoryName(path);
             string path = "Assets/Resources/Logiked";
+            var frags = path.Split(new char[] { '/' });
+
+            if (!AssetDatabase.IsValidFolder(Path.Combine(frags[0], frags[1])))
+                AssetDatabase.CreateFolder(frags[0], frags[1]);
+
+            if (!AssetDatabase.IsValidFolder(path))
+                AssetDatabase.CreateFolder(Path.Combine(frags[0], frags[1]), frags[2]);
+
 
 
 
 
             //Search setting file par le labbel
-            var files = AssetDatabase.FindAssets("l:" + pluginFolderName.Replace("Logiked", ""), new string[] { path });
+            var files = AssetDatabase.FindAssets(/*"l:" +*/ pluginFolderName.Replace("Logiked_", ""), new string[] { path });
 
             // foreach (var f in files) { Debug.LogError(AssetDatabase.GUIDToAssetPath(f)); }
 
@@ -762,26 +792,7 @@ namespace logiked.source.editor
             else
             {
                 Editor editor = Editor.CreateEditor(settings);
-                editor.DrawDefaultInspector();
-
-                // LogikedPluginSettings.DrawDefaultInspector();
-
-                /*
-                var fields = settings.GetType().GetFields();
-                for (int j = 0; j < fields.Length; j++)
-                {
-                    object val = fields[j].GetValue(settings);
-
-                    if (val is int)
-                        val = EditorGUILayout.IntField(fields[j].Name, (int)val);
-                    else if (val is string)
-                        val = EditorGUILayout.TextField(fields[j].Name, (string)val);
-                    else if (val is float)
-                        val = EditorGUILayout.FloatField(fields[j].Name, (float)val);
-                    else
-                        GUILayout.Label("Unkown paramtype : "+ fields[j].Name);
-                }*/
-
+                editor.OnInspectorGUI();
             }
 
 
