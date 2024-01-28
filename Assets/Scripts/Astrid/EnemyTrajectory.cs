@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyTrajectory : MonoBehaviour
 {
-    public Transform objectToFollow;
+    Transform objectToFollow;
     public Transform eyes;
     public Transform tail;
     public Transform tail2;
