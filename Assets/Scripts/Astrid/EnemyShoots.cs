@@ -43,14 +43,14 @@ public class EnemyShoots : MonoBehaviour
         if (distToBody <= MaxDist)
         {
             spriteRenderer.sprite = shootingSprite;
-            audioSource.PlayOneShot(audioSource.clip);
 
             Vector2 enemyPos = new Vector2(weaponMuzzle.position.x, weaponMuzzle.position.y); //where muzzle direction
             GameObject projectile = Instantiate(bullet, enemyPos, Quaternion.identity); //create bullet
             var direction = (enemyPos - (Vector2)objectToShoot.position).x.Sign(); //get the direction to the objectToShoot
             transform.localScale = new Vector3(direction * 1,1,1);
             projectile.GetComponent<Rigidbody2D>().velocity = Vector2.left * direction * shootingPower; //shoot bullet
-  
+            audioSource.PlayOneShot(audioSource.clip);
+
             new GameTimer(1f, Pause);
         } else
         {

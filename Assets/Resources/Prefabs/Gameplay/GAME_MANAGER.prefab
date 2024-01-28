@@ -57,6 +57,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -593195701
   m_SortingOrder: 0
@@ -1025,7 +1026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentMusic: {fileID: 0}
   camTargetPoint: {fileID: 0}
-  mainPaintMap: {fileID: 0}
+  mainPaintMaps: []
   levelContent: {fileID: 0}
   playerPref: {fileID: 777259114524715054, guid: bb23ba8e30f25634997820dbe20ba809,
     type: 3}
@@ -1078,7 +1079,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ecb4f893e3b69f4894ae0dbce41ef63, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
