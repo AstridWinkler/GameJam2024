@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7ffd54f9d44ec40a24a266f69a8442, type: 3}
+  m_Name: jumpingFrog_inJump
+  m_EditorClassIdentifier: 
+  duration: 0.5
+  loopMode: 1
+  sprites:
+  - {fileID: -1509521645, guid: 5f79feb74578ed942b8012258eee59cc, type: 3}
+  - {fileID: -1513260524, guid: 5f79feb74578ed942b8012258eee59cc, type: 3}

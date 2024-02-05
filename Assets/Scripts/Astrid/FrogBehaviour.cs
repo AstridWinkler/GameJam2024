@@ -1,3 +1,4 @@
+using logiked.Tool2D.animation;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,7 @@ public class FrogBehaviour : MonoBehaviour
 {
 
     internal Transform thisTransform;
-    public Animator animator;
+    public AnimatorRenderer2D animator;
 
     // The movement speed of the object
     public float moveSpeed = 0.2f;
@@ -31,6 +32,8 @@ public class FrogBehaviour : MonoBehaviour
         // Set a random time delay for taking a decision ( changing direction,or standing in place for a while )
         decisionTimeCount = Random.Range(decisionTime.x, decisionTime.y);
 
+        animator = GetComponent<AnimatorRenderer2D>();
+
         // Choose a movement direction, or stay in place
         ChooseMoveDirection();
 
@@ -44,10 +47,7 @@ public class FrogBehaviour : MonoBehaviour
 
         thisTransform.position += direction * Time.deltaTime * moveSpeed;
 
-        if (animator)
-        {
-            animator.SetFloat("MoveX", xDir);
-        }
+        animator.SetStateValue("jump", 1, false);
 
         if (decisionTimeCount > 0) decisionTimeCount -= Time.deltaTime;
         else

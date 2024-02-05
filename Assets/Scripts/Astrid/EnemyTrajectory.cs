@@ -48,9 +48,7 @@ public class EnemyTrajectory : MonoBehaviour
     }
 
     void Update()
-    {
-        
-
+    {     
 
         if (objectToFollow == null)
         {

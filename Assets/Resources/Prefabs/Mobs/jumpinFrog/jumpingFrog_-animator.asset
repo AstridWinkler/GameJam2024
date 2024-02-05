@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c07d0e89f32aa42b162b28b2f5054e, type: 3}
+  m_Name: jumpingFrog_-animator
+  m_EditorClassIdentifier: 
+  animations:
+  - uniqueNodeId: 1992465491
+    text: '
+
+      End
+
+'
+    editorPosition: {x: -100, y: -150}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: 9abec8c283453c04aad07500e2681d58, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 7894808
+        rules:
+        - comparator: 61
+          result: 1
+          variableId: 1764482971
+        endRuleInteraction: 0
+  - uniqueNodeId: 7894808
+    text: '
+
+      InJump
+
+'
+    editorPosition: {x: -100, y: 50}
+    RectSize: {x: 150, y: 75}
+    transitionMode: 0
+    file: {fileID: 11400000, guid: a91c48d313f9d6e4eb8e7d345f442314, type: 2}
+    speedModifier: 1
+    variationVariableId: 0
+    transitionPack:
+      allowMultipleTransition: 1
+      overlaySelectionMessage: 
+      transitions:
+      - nextNodeId: 1992465491
+        rules:
+        - comparator: 61
+          result: 0
+          variableId: 1764482971
+        endRuleInteraction: 0
+  variables:
+  - name: idl
+    id: 0
+    value: 0
+  - name: jump
+    id: 1764482971
+    value: 0
+  animationEntryPointId: 1992465491
