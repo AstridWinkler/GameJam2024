@@ -1,0 +1,20 @@
+{
+    "name": "com.logiked.audio",
+    "version": "0.1.0",
+    "displayName": "Logiked Audio System",
+    "description": "Easy to use audio sources & cool audio features, like pitch variation.",
+    "unity": "2020.1",
+    "documentationUrl": "",
+    "changelogUrl": "",
+    "licensesUrl": "",
+    "dependencies": {
+        "com.logiked.source": "https://github.com/Logiked/LogikedSource.git"
+    },
+    "keywords": [
+    ],
+    "author": {
+        "name": "Logiked",
+        "email": "logiked-about@yahoo.com",
+        "url": "https://logiked.itch.io/"
+    }
+}

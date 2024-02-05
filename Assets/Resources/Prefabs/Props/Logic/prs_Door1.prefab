@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 817518746}
   - component: {fileID: 5955690943539994272}
   - component: {fileID: 8979368471124561210}
+  - component: {fileID: 1818979087}
   m_Layer: 0
   m_Name: prs_Door1
   m_TagString: Untagged
@@ -148,6 +149,35 @@ MonoBehaviour:
   connectedTo: []
   anim: {fileID: 817518746}
   state: 0
+  source: {fileID: 1818979087}
+  openSound:
+    useFileReference: 0
+    sourceFile: {fileID: 0}
+    overrideFileVolume: 0
+    overrideFilePitch: 0
+    clips:
+    - {fileID: 8300000, guid: acae4ae485cae54458917ad8925dd367, type: 3}
+    volume:
+      value: 1
+      variation: 0.05
+    pitch:
+      value: 1
+      variation: 0.05
+    test: {x: 0, y: 0}
+  closeSound:
+    useFileReference: 0
+    sourceFile: {fileID: 0}
+    overrideFileVolume: 0
+    overrideFilePitch: 0
+    clips:
+    - {fileID: 8300000, guid: f550b8fc74e63b747865045c0a4bf910, type: 3}
+    volume:
+      value: 1
+      variation: 0.05
+    pitch:
+      value: 1
+      variation: 0.05
+    test: {x: 0, y: 0}
 --- !u!114 &8979368471124561210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +215,76 @@ MonoBehaviour:
     maskType: 0
     maskPivot: 0
     transform: {fileID: 9159809035710234900}
+--- !u!114 &1818979087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611084165442961842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c6b1cf6ee71864489d536b7dccc3ac9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSourceType: 1
+  source: {fileID: 0}
+  maxDistance: 35
+  volumeCoeficient: 1
+  stereoByDistance:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.5
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  ambiantSound:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.75
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  dopplerEffect: 0.1
+  audioMixer: -1
+  sourcePresset: -1
+  loopSound: 0
+  mixerType: -1
+  overrideMixer: {fileID: 0}
 --- !u!1 &1073893386549495069
 GameObject:
   m_ObjectHideFlags: 0
@@ -303,7 +403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8748540055427460084
 Transform:
   m_ObjectHideFlags: 0
@@ -425,7 +525,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8873d1be01418e84d819a33e6f33d15a, type: 2}
+  - {fileID: 2100000, guid: 7e2227b98d8ed3341808b7566b994704, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -525,7 +625,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8873d1be01418e84d819a33e6f33d15a, type: 2}
+  - {fileID: 2100000, guid: 7e2227b98d8ed3341808b7566b994704, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -625,7 +725,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8873d1be01418e84d819a33e6f33d15a, type: 2}
+  - {fileID: 2100000, guid: 7e2227b98d8ed3341808b7566b994704, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1044,7 +1144,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8873d1be01418e84d819a33e6f33d15a, type: 2}
+  - {fileID: 2100000, guid: 7e2227b98d8ed3341808b7566b994704, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1144,7 +1244,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8873d1be01418e84d819a33e6f33d15a, type: 2}
+  - {fileID: 2100000, guid: 7e2227b98d8ed3341808b7566b994704, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

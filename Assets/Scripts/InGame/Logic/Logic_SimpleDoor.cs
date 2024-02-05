@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using logiked.audio;
 
 public class Logic_SimpleDoor : LogicBlock_Base
 {
@@ -10,8 +11,13 @@ public class Logic_SimpleDoor : LogicBlock_Base
     bool state;
 
     bool invert;
-   
 
+    [SerializeField]
+    GameAudioSource source;
+    [SerializeField]
+    GameSound openSound;
+    [SerializeField]
+    GameSound closeSound;
 
     private void Awake()
     {
@@ -39,6 +45,15 @@ public class Logic_SimpleDoor : LogicBlock_Base
 
     void UpdateAnim()
     {
+        var val = state ^ invert;
+
+        if (source != null)
+        {
+            if (val && openSound != null) source.PlaySound(openSound);
+            if (!val && closeSound != null) source.PlaySound(closeSound);
+
+        }
+
         anim.SetBool("state", state ^ (invert) );
     }
 

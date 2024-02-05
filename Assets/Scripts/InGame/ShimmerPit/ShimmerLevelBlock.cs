@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FunkyCode;
 
 
 #if UNITY_EDITOR
@@ -70,7 +71,9 @@ public class ShimmerLevelBlock : MonoBehaviour
 
     public void SetShimmerDepth(int depth)
     {
-        if(lightAndOtherSettings != null)
+        LightingManager2D.Instance.Reinit();
+
+        if (lightAndOtherSettings != null)
             lightAndOtherSettings.gameObject.SetActive(depth == 0);
 
 

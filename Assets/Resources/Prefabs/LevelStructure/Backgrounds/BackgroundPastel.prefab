@@ -12229,6 +12229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sizeDecreaseFactor: 3
   distanceDecreaseMovingFactor: 2
+  yOffset: 100
   backgrounds:
   - backgroundObject: {fileID: 91334197529240683}
     sizeX: 0
@@ -12265,6 +12266,7 @@ MonoBehaviour:
     zAxisDrag: 100
     dragCoef: 1
     distanceScaling: 0
+  mainCam: {fileID: 0}
 --- !u!114 &2410217183064406690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17625,7 +17627,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2410217184744100328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -136,6 +136,7 @@ public class GameplayManager : BasicManager
         travelShimerImage.texture = tex;
 
 
+        travelShimerImage.gameObject.SetActive(false);
 
         // wait for graphics to render
         yield return new WaitForEndOfFrame();
@@ -382,10 +383,10 @@ public class GameplayManager : BasicManager
 
             if (!instP.ActiveAndPlaying())
             {
-                float respawnTime2 = 1f;
+                float respawnTime2 = 0f;
 
-                var dist = Mathf.Max( (Vector2.Distance(lastDiePos, respawnPos) / 12f).Floor(), 1);
-                respawnTime2 = respawnTime;// * dist;
+               // var dist = Mathf.Max( (Vector2.Distance(lastDiePos, respawnPos) / 12f).Floor(), 1);
+               // respawnTime2 = respawnTime;// * dist;
 
                 var lev = levelContent;
                 instP = new Tra_LoopPack(() => { if (lev == levelContent) SummonPlayer(); IsDashing = false; }, respawnTime2, GameStateController.Wait_MobClassic);
@@ -473,16 +474,32 @@ public class GameplayManager : BasicManager
 
     public void KillPlayer(DieEnum dieMode, DieKiller killer = DieKiller.None, Vector2 respawnPos = default(Vector2) )
 	{
+
+
         bool respawn = currentDepth > 0;
 
         if (!respawn)
             GameManager.Gameplay.DieAndReloadMap();
 
 
+        RemoveSpawnPoint();
 
         //     Debug.Log("player killed");
         if (currentPlayer != null && !trySpawn)
         {
+
+            if (currentPlayerCtr.currentGrabbedObject != null) {
+                var obj = currentPlayerCtr.currentGrabbedObject;
+                obj.transform.SetParent(null);
+                new GameTimer(0.1f, () =>
+                {
+                    if (currentPlayerCtr != null && obj != null)
+                        currentPlayerCtr.ForceGrabObject(obj);
+                });
+                
+                    }
+
+
             currentPlayerCtr.OnDie();
             trySpawn = true;
             GameObject corp = Instantiate(diePref[(int)dieMode], currentPlayer.transform.position, new Quaternion(), GameManager.TempInstances);
